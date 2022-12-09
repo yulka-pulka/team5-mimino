@@ -1,0 +1,69 @@
+//____FONT
+
+@mixin font($size, $height, $weight, $spacing) {
+  font-size: $size;
+  line-height: $height;
+  font-weight: $weight;
+  letter-spacing: $spacing;
+}
+
+//____BOX WIDTH HEIGHT
+@mixin box($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+//____FLEX COLUMN
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+//_____FLEX CENTER
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//_____FLEX COLUMN CENTER
+@mixin flex-center-column {
+  @include flex-center;
+  flex-direction: column;
+}
+
+//_____RESPOND
+
+@mixin mobile {
+  @media screen and (min-width: $mobile) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media screen and (min-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media screen and (min-width: $desktop) {
+    @content;
+  }
+}
+
+//_____RETINA IMAGES
+@mixin retina2x {
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    @content;
+  }
+}
+@mixin retina3x {
+  @media (min-device-pixel-ratio: 3),
+    (min-resolution: 288dpi),
+    (min-resolution: 3dppx) {
+    @content;
+  }
+}
