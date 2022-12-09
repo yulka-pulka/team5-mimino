@@ -1,5 +1,38 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
 
+@font-face {
+  font-family: Film P3;
+  src: url(../fonts/FilmP3Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-bold;
+  src: url(../fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: Montserrat-light;
+  src: url(../fonts/Montserrat-Light.ttf);
+}
+@font-face {
+  font-family: Montserrat-medium;
+  src: url(../fonts/Montserrat-Medium.ttf);
+}
+@font-face {
+  font-family: Montserrat-regular;
+  src: url(../fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: Montserrat-SemiBold;
+  src: url(../fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: TimesNewRoman-bold;
+  src: url(../fonts/times-new-roman-grassetto.ttf);
+}
+@font-face {
+  font-family: TimesNewRoman-regular;
+  src: url(../fonts/times-new-roman.ttf);
+}
+
 body {
   font-family: 'open sans', sans-serif;
 }
