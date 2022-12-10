@@ -13,6 +13,10 @@ $colors: (
   'placeholder': #808080,
 );
 
+$times-font: 'TimesNewRoman', 'sans-serif';
+$montserrat-font: 'Montserrat', 'sans-serif';
+$film-font: 'FilmP3', 'sans-serif';
+
 @function getColor($key) {
   @return map-get($colors, $key);
 }
