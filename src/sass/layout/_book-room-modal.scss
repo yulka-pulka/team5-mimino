@@ -110,9 +110,17 @@
   color: #808080;
   background-color: transparent;
   border: 1px solid #c79002;
+  appearance: none;
+  display: flex;
   @media screen and (min-width: 1024px) {
     width: 288px;
   }
+}
+
+.room-select::after {
+  content: '+';
+  width: 50px;
+  height: 50px;
 }
 .room-wrap-right {
   @media screen and (min-width: 1024px) {
