@@ -1,8 +1,8 @@
-//____FONT
+//____FONT calculate line-height
 
 @mixin font($size, $height, $weight, $spacing) {
   font-size: $size;
-  line-height: $height;
+  line-height: $height/$size;
   font-weight: $weight;
   letter-spacing: $spacing;
 }
@@ -57,13 +57,6 @@
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    @content;
-  }
-}
-@mixin retina3x {
-  @media (min-device-pixel-ratio: 3),
-    (min-resolution: 288dpi),
-    (min-resolution: 3dppx) {
     @content;
   }
 }
