@@ -1,0 +1,18 @@
+$colors: (
+  'primary-text': #7a7a7a,
+  'secondary-text': #bababa,
+  'primary-title': #000000,
+  'secondary-title': #b4b4b4,
+  'white-text': #ffffff,
+  'accent-color': #f3c653,
+  'second-accent': #c79002,
+  'primary-bg': #fffdee,
+  'secondary-bg': #f0ecd6,
+  'bg-footer': #0e0c07,
+  'contacts': #828282,
+  'placeholder': #808080,
+);
+
+@function getColor($key) {
+  @return map-get($colors, $key);
+}
