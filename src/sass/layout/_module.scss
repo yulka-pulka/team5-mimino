@@ -1,36 +1,36 @@
-@import './header.scss';
-@import './footer.scss';
-@import './book-room-modal.scss';
-@import './book-table-modal.scss';
-@import './book-price-modal.scss';
+@import './header';
+@import './footer';
+@import './book-room-modal';
+@import './book-table-modal';
+@import './book-price-modal';
 
 // Main Page
-@import './pages/main-page/hero.scss';
-@import './pages/main-page/about-our-restaurant.scss';
-@import './pages/main-page/details-of-our-restaurant.scss';
-@import './pages/main-page/details-of-our-hotel.scss';
-@import './pages/main-page/details-of-our-hotel.scss';
-@import './pages/main-page/contacts.scss';
+@import './pages/main-page/hero';
+@import './pages/main-page/about-our-restaurant';
+@import './pages/main-page/details-of-our-restaurant';
+@import './pages/main-page/details-of-our-hotel';
+@import './pages/main-page/details-of-our-hotel';
+@import './pages/main-page/contacts';
 
 // Restaurant Page
-@import './pages/restaurant/hero.scss';
-@import './pages/restaurant/about.scss';
-@import './pages/restaurant/menu.scss';
+@import './pages/restaurant/hero';
+@import './pages/restaurant/about';
+@import './pages/restaurant/menu';
 
 // Hotel Page
-@import './pages/hotel/hero.scss';
-@import './pages/hotel/double-room-luxe.scss';
-@import './pages/hotel/double-room.scss';
-@import './pages/hotel/triple-room.scss';
+@import './pages/hotel/hero';
+@import './pages/hotel/double-room-luxe';
+@import './pages/hotel/double-room';
+@import './pages/hotel/triple-room';
 
 // Double room luxe
-@import './pages/double-room-luxe/hero.scss';
-@import './pages/double-room-luxe/amenities.scss';
+@import './pages/double-room-luxe/hero';
+@import './pages/double-room-luxe/amenities';
 
 // Double room
-@import './pages/double-room/hero.scss';
-@import './pages/double-room/amenities.scss';
+@import './pages/double-room/hero';
+@import './pages/double-room/amenities';
 
 // Triple room
-@import './pages/triple-room/hero.scss';
-@import './pages/triple-room/amenities.scss';
+@import './pages/triple-room/hero';
+@import './pages/triple-room/amenities';
