@@ -1,0 +1,43 @@
+.hero.hotel-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/hero/bg-hot.jpg);
+
+  @include retina2x {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hero/bg-hot@2x.jpg);
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hero/tab-bg-hot.jpg);
+    @include retina2x {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/tab-bg-hot@2x.jpg);
+    }
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hero/desk-bg-hot.jpg);
+    @include retina2x {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/desk-bg-hot@2x.jpg);
+    }
+  }
+  @include desktop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hero/desk-bg-hot.jpg);
+    @include retina2x {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/desk-bg-hot@2x.jpg);
+    }
+  }
+}

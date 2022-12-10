@@ -28,3 +28,18 @@ img {
   height: auto;
   max-width: 100%;
 }
+// ---------reset
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

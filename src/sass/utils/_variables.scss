@@ -16,3 +16,6 @@ $colors: (
 @function getColor($key) {
   @return map-get($colors, $key);
 }
+$tablet: 1024px;
+$desktop: 1280px;
+$mobile: 414px;

@@ -1,0 +1,43 @@
+.hero.restaurant-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/hero/bg-rest.jpg);
+
+  @include retina2x {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hero/bg-rest@2x.jpg);
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hero/tab-bg-rest.jpg);
+    @include retina2x {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/tab-bg-rest@2x.jpg);
+    }
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hero/desk-bg-rest.jpg);
+    @include retina2x {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/desk-bg-rest@2x.jpg);
+    }
+  }
+  @include desktop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hero/desk-bg-rest.jpg);
+    @include retina2x {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/desk-bg-rest@2x.jpg);
+    }
+  }
+}
