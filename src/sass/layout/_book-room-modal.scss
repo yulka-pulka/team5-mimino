@@ -8,19 +8,18 @@
 }
 .modal-room {
   width: 100%;
-  min-height: 100%;
-  background-color: #fffdee;
+  min-height: 780px;
+  background-color: map-get($colors, 'primary-bg');
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 2px;
   padding: 60px 16px;
-  @media screen and (min-width: 414px) {
+  @include mobile {
     width: 414px;
-    min-height: 780px;
   }
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     width: 712px;
     min-height: 638px;
     padding: 60px;
@@ -42,29 +41,30 @@
   border: none;
 }
 .modal-room-icon {
-  stroke: #000000;
+  stroke: map-get($colors, 'primary-title');
 }
 .modal-room-title {
   margin-bottom: 40px;
   font-family: 'Times New Roman';
   font-style: normal;
   text-align: center;
+  color: map-get($colors, 'primary-title');
   font-weight: 700;
   font-size: 5vw;
   line-height: 1.16;
   letter-spacing: 0.05em;
-  color: #000000;
-  @media screen and (min-width: 414px) {
+  @include mobile {
     font-size: 24px;
   }
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     font-size: 40px;
+    line-height: 1.15;
     margin-bottom: 36px;
   }
 }
 
 .room-intut-wrap {
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     display: flex;
     gap: 16px;
     margin-bottom: 28px;
@@ -77,17 +77,21 @@
   }
 }
 .room-label {
-  display: flex;
-  flex-direction: column;
+  @include flex-column;
 }
 .room-label::after {
-  content: '+';
+  content: '';
   position: absolute;
   top: 16px;
   right: 16px;
+  background-image: url(../images/galochka.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
 }
 .room-select-wpap {
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     display: flex;
     gap: 16px;
     margin-bottom: 40px;
@@ -98,12 +102,12 @@
   /*width: 98%;*/
   height: 54px;
   border-radius: 2px;
-  color: #808080;
+  color: map-get($colors, 'placeholder');
   padding: 0 12px;
   display: inline-block;
   display: flex;
   background-color: transparent;
-  border: 1px solid #c79002;
+  border: 1px solid map-get($colors, 'second-accent');
   &::placeholder {
     font-family: 'Times New Roman';
     font-style: normal;
@@ -111,14 +115,14 @@
     font-size: 4vw;
     line-height: 23px;
     letter-spacing: 0.05em;
-    color: #808080;
+    color: map-get($colors, 'placeholder');
   }
-  @media screen and (min-width: 414px) {
+  @include mobile {
     &::placeholder {
       font-size: 20px;
     }
   }
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     width: 288px;
     height: 64px;
     &::placeholder {
@@ -135,9 +139,9 @@
   font-size: 14px;
   line-height: 1.2;
   letter-spacing: 0.02em;
-  color: #c79002;
+  color: map-get($colors, 'second-accent');
   padding-left: 12px;
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     font-size: 16px;
   }
 }
@@ -151,14 +155,14 @@
   font-size: 4vw;
   line-height: 23px;
   letter-spacing: 0.05em;
-  color: #808080;
+  color: map-get($colors, 'placeholder');
   background-color: transparent;
-  border: 1px solid #c79002;
+  border: 1px solid map-get($colors, 'second-accent');
   appearance: none;
-  @media screen and (min-width: 414px) {
+  @include mobile {
     font-size: 20px;
   }
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     width: 288px;
     font-size: 24px;
     height: 64px;
@@ -166,7 +170,7 @@
 }
 
 .room-wrap-right {
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     display: flex;
     flex-direction: column;
     margin-left: 304px;
@@ -174,15 +178,15 @@
   }
 }
 .room-select-right {
-  @media screen and (min-width: 1024px) {
+  @include tablet {
     width: 288px;
   }
 }
 .btn-room {
   width: 100%;
   height: 64px;
-  background-color: #000000;
-  border: 1px solid #f3c653;
+  background-color: map-get($colors, 'primary-title');
+  border: 1px solid map-get($colors, 'accent-color');
   border-radius: 2px;
   font-family: 'Montserrat';
   font-style: normal;
@@ -190,7 +194,7 @@
   font-size: 20px;
   line-height: 1.2;
   color: #ffffff;
-  @media screen and (min-width: 414px) {
+  @include mobile {
     min-width: 384px;
   }
 }
