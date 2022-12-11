@@ -49,6 +49,13 @@
   margin-left: auto;
 }
 
+@mixin font($size, $height, $weight, $spacing) {
+  font-size: $size;
+  line-height: calc($height/$size);
+  font-weight: $weight;
+  letter-spacing: $spacing;
+}
+
 .logotype {
   font-family: Film P3;
   src: url(../fonts/FilmP3Bold.ttf);
@@ -56,7 +63,7 @@
   font-size: 36px;
   line-height: calc(39 / 36);
   letter-spacing: 0.3em;
-  color: #ffffff;
+  color: getColor('white-text');
   display: inline-block;
 
   @include tablet {
@@ -65,7 +72,6 @@
     font-size: 40px;
     line-height: calc(43 / 40);
     letter-spacing: 0.3em;
-    color: #ffffff;
   }
 }
 
@@ -83,11 +89,10 @@
   src: url(../fonts/Montserrat-Bold.ttf);
   font-style: normal;
   font-weight: 500;
-
   font-size: 16px;
   line-height: calc(20 / 16);
   letter-spacing: 0.02em;
-  color: #f3c653;
+  color: getColor('accent-color');
 
   display: flex;
   align-items: center;
@@ -105,7 +110,7 @@
   @media (max-width: 1023px) {
     &:hover,
     &:focus {
-      color: #ffffff;
+      color: getColor('white-text');
     }
   }
 
@@ -118,14 +123,14 @@
       left: 0;
       width: 100%;
       height: 4px;
-      background-color: #f3c653;
+      background-color: getColor('accent-color');
       border-radius: 4px;
     }
   }
 }
 
 .phone-icon-mobile {
-  fill: #f3c653;
+  fill: getColor('accent-color');
   margin-left: 12px;
 
   @include tablet {
@@ -158,7 +163,7 @@
   font-size: 14px;
   line-height: calc(17 / 14);
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: getColor('white-text');
 
   display: flex;
   align-items: center;
@@ -166,12 +171,12 @@
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: #f3c653;
+    color: getColor('accent-color');
   }
 }
 
 .phone-icon {
-  fill: #f3c653;
+  fill: getColor('accent-color');
   margin-right: 14px;
   width: 24px;
   height: 24px;
@@ -184,13 +189,13 @@
   font-size: 14px;
   line-height: calc(17 / 14);
   letter-spacing: 0.02em;
-  color: #ffffff;
+  color: getColor('white-text');
   margin-left: 16px;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    color: #f3c653;
+    color: getColor('accent-color');
   }
 }
 
@@ -214,7 +219,7 @@
 
   &:hover,
   &:focus {
-    fill: #ffffff;
+    fill: getColor('white-text');
   }
 }
 
