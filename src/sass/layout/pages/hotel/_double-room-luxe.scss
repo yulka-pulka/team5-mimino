@@ -4,20 +4,19 @@
         margin-left: auto;
         margin-right: auto;
         width: 414px;
-        height: 1050px;
         padding-top: 32px;
         padding-bottom: 32px;
     }
     @media screen and (min-width: 1024px){
         width: 1024px;
-        height: 838px;
+       
         padding-top: 62px;
         padding-bottom: 40px;
         position: relative;
     }
     @media screen and (min-width: 1280px){
         width: 1280px;
-        height: 956px;
+        
         padding-top: 72px;
     }
     
@@ -102,49 +101,44 @@
         margin-top: 24px;
     }
 }
-.imeges{
+.images{
     @media screen and (min-width: 414px){
         width: 244px;
         height: 322px;
         margin-left: 140px;
+        margin-top: 24px;
     }
     @media screen and (min-width: 1024px){
         display: block;
         position: absolute;
         content: "";
         top: -105px;
-        right: 112px;
+        right: 90px;
         width: 400px;
         height: 524px;
     }
     @media screen and (min-width: 1280px){
         width: 460px;
         height: 574px;
-        right: 180px;
-    }
-
-    &-list{
-        @media screen and (min-width: 414px){
-            width: 404px;
-            display: flex;
-            gap: 16px;
-            margin-top: 32px;
-   
-        }
-        @media screen and (max-width: 500px){
-            margin-left: -115px;
-        }
-        @media screen and (min-width: 1024px){
-            display: flex;
-            gap: 40px;
-            margin-top: 176px;
-        }
-        @media screen and (min-width: 1280px){
-            width: 548px;
-            margin-top: 188px;
-        }
+        right: 150px;
     }
 }
+  .slider{
+    @media screen and (min-width: 414px){
+        width: 404px;
+        height: 192px;
+
+        background-color: #494848;
+    } 
+    @media screen and (min-width:1024px){
+
+        height: 254px;
+    }
+    @media screen and (min-width: 1280px){
+        width: 548px;
+
+    } 
+  } 
 .img{
     @media screen and (min-width: 414px){
         width: 194px;
@@ -209,4 +203,41 @@
     background: #FFFFFF;
     border: 2px solid #F3C653;
 }
+.btn-list{
+    @media screen and (min-width: 414px){
+        text-align: center;
+        align-items: center; 
+        margin-top: 20px;
+    } 
+    @media screen and (min-width: 1024px){
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin-bottom: 182px;
+        flex: 0 0 50%;
+        align-self: center;
+        width: 500px;
+    }
+    @media screen and (min-width: 1280px){
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: right;
+        flex: 0 0 50%;
+        align-self: center;
+}
+}
+.wrapper{
+    @media screen and (min-width: 414px){
+        margin-top: 32px;
+    } 
+    @media screen and (min-width:1024px){
+        display: flex;
+        margin-top: 176px;
+    }
+    @media screen and (min-width: 1280px){
+        margin-top: 188px;
+    } 
+}
+
 
