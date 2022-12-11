@@ -1,1 +1,244 @@
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url(../images/hero/home-iphone.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  @include retina2x {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hero/home-iphone-2x.jpg);
+  }
+
+  @media screen and (min-width: $mobile) and (max-width: $tablet) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hero/home-ipad.jpg);
+    @include retina2x {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/home-ipad-2x.jpg);
+    }
+  }
+  @media screen and (min-width: $tablet) and (max-width: $desktop) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hero/home-des.jpg);
+    @include retina2x {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/home-des-2x.jpg);
+    }
+  }
+  @include desktop {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/hero/home-des.jpg);
+    max-width: $desktop;
+    margin: 0 auto;
+    @include retina2x {
+      background-image: linear-gradient(
+          rgba(0, 0, 0, 0.65),
+          rgba(0, 0, 0, 0.65)
+        ),
+        url(../images/hero/home-des-2x.jpg);
+    }
+  }
+
+  &__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 20px;
+    height: 740px;
+
+    @include tablet {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      height: 720px;
+    }
+  }
+  &__box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 115px;
+    @include tablet {
+      flex: 0 0 100%;
+      align-self: self-start;
+      padding-top: 190px;
+      margin-bottom: 0;
+    }
+  }
+  &__title {
+    font-family: 'Film P3', sans-serif;
+    @include font(96px, 103px, 700, 0.3em);
+    // font-size: 23vw;
+    text-transform: uppercase;
+    width: 303px;
+    margin: 0 auto;
+    @include tablet {
+      @include font(128px, 138px, 700, 0.3em);
+      width: 404px;
+    }
+  }
+  &__subtitle {
+    font-family: 'Montserrat', sans-serif;
+    @include font(16px, 20px, 600, 0.02em);
+    margin-top: 24px;
+    @include tablet {
+      @include font(20px, 24px, 600, 0.02em);
+      margin-top: 16px;
+    }
+    @include desktop {
+      margin-top: 32px;
+    }
+  }
+  &__description {
+    font-family: 'Times New Roman', serif;
+    @include font(32px, 37px, 700, 0.05em);
+    margin-top: 40px;
+    @include tablet {
+      @include font(36px, 41px, 700, 0.05em);
+      margin-top: 56px;
+    }
+    @include desktop {
+      margin-top: 64px;
+    }
+  }
+  &__contacts {
+    margin-top: 60px;
+    @include tablet {
+      margin-top: 0;
+    }
+    & .social-list {
+      @include desktop {
+        display: none;
+      }
+    }
+  }
+
+  .button-box {
+    text-align: center;
+    @include tablet {
+      display: flex;
+      padding-bottom: 49px;
+      order: 1;
+    }
+    @include desktop {
+      padding-bottom: 65px;
+    }
+
+    & .btn {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+        @include tablet {
+          margin-right: 40px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+  .address-box {
+    border: 1px solid rgba(243, 198, 83, 0.7);
+    border-radius: 2px;
+    position: absolute;
+    width: 210px;
+    top: 64px;
+    right: 15px;
+    @include tablet {
+      position: inherit;
+      margin-bottom: 25px;
+      width: 285px;
+    }
+    @include desktop {
+      margin-bottom: 65px;
+    }
+    &__link {
+      display: flex;
+      align-items: center;
+
+      padding: 9px 6px 9px 0;
+      color: #e5e5e5;
+      font-family: 'Montserrat', sans-serif;
+      @include font(12px, 15px, 400, 0.01em);
+      text-align: left;
+      @include tablet {
+        @include font(16px, 20px, 400, 0.01em);
+        padding-top: 8px;
+        padding-bottom: 8px;
+        padding-left: 8px;
+      }
+    }
+    & .icon {
+      color: getColor('accent-color');
+      margin-right: 8px;
+
+      @include tablet {
+        @include box(26px);
+      }
+    }
+  }
+}
+// ICON
+.icon {
+  @include box(24px);
+  fill: currentColor;
+}
+//---------- SOCIAL
+.social-list {
+  display: flex;
+  align-items: center;
+  &__item {
+    @include box(24px);
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+  &__link {
+    display: inline-flex;
+    color: rgba(getColor('accent-color'), 0.7);
+    @include tablet {
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover,
+    &:focus {
+      @include tablet {
+        color: rgba(255, 255, 255, 0.7);
+      }
+    }
+  }
+}
+//----------Buttons
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: getColor('accent-color');
+  min-width: 236px;
+  padding: 12px 22px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  cursor: pointer;
+  @include tablet {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover,
+  &:focus {
+    @include tablet {
+      background-color: #ffffff;
+      border-color: getColor('accent-color');
+    }
+  }
+  &:active {
+    @include tablet {
+      border-color: #ffffff;
+    }
+  }
+}
