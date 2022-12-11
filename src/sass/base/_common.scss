@@ -17,11 +17,10 @@
 }
 @font-face {
   font-family: Montserrat;
-  src: url(../fonts/Montserrat-Bold.ttf);
+  src: url(../fonts/Montserrat-Medium.ttf);
   font-style: normal;
   font-weight: 500;
 }
-
 @font-face {
   font-family: Montserrat;
   src: url(../fonts/Montserrat-Regular.ttf);
@@ -46,35 +45,31 @@
   font-style: normal;
   font-weight: 400;
 }
-
-body {
-  font-family: 'open sans', sans-serif;
-}
-
 .list {
   list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
-
 .link {
   text-decoration: none;
 }
-
 .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
-
 .container {
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  
   @media screen and (min-width: $mobile) {
     max-width: $mobile;
   }
   @media screen and (min-width: $tablet) {
     max-width: $tablet;
+
     padding-left: 47px;
     padding-right: 47px;
   }
@@ -83,4 +78,16 @@ body {
     padding-left: 85px;
     padding-right: 85px;
   }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
