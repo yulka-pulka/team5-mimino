@@ -80,6 +80,10 @@
     text-transform: uppercase;
     width: 303px;
     margin: 0 auto;
+    @media screen and (max-width: $mobile) {
+      font-size: 23vw;
+      width: 73vw;
+    }
     @include tablet {
       @include font(128px, 138px, 700, 0.3em);
       width: 404px;
@@ -89,6 +93,9 @@
     font-family: 'Montserrat', sans-serif;
     @include font(16px, 20px, 600, 0.02em);
     margin-top: 24px;
+    @media screen and (max-width: $mobile) {
+      font-size: 4vw;
+    }
     @include tablet {
       @include font(20px, 24px, 600, 0.02em);
       margin-top: 16px;
@@ -101,6 +108,9 @@
     font-family: 'Times New Roman', serif;
     @include font(32px, 37px, 700, 0.05em);
     margin-top: 40px;
+    @media screen and (max-width: $mobile) {
+      font-size: 8vw;
+    }
     @include tablet {
       @include font(36px, 41px, 700, 0.05em);
       margin-top: 56px;
@@ -160,6 +170,7 @@
     &__link {
       display: flex;
       align-items: center;
+      text-decoration: none;
 
       padding: 9px 6px 9px 0;
       color: #e5e5e5;
