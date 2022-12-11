@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link
+href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap"
+rel="stylesheet"
+/>
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+/>
+<link rel="stylesheet" href="./css/main.min.css"/>
+<title>Hotel</title>
+</head>
+<body>
+<main>
+<section class="double-luxe">
+  <div class="container">
+    <div class="hotel-about">
+    <h3 class="hotel__item-titel">Amet minim mollit non</h3>
+    <h2 class="hotel__title">MIMIHO</h2>
+    <h2 class="hotel__luxe item">ДВОМІСНИЙ НОМЕР люкс</h2>
+    <p class="hotel__about item">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+      sint. Velit officia consequat duis enim velit mollit. Exercitation
+      veniam consequat sunt nostrud amet.
+    </p>
+  </div>
+  <picture>
+    <source
+          media="(min-width: 1280px)"
+           srcset="
+            ./imeges/desktop/bedroom.jpg 1x,
+            ./imeges/desktop/bedroom-2x.jpg 2x"
+             type="image/jpg"
+            />
+    <source
+          media="(min-width: 1024px)"
+            srcset="
+             ./imeges/ipad/bedroom.jpg 1x,
+            ./imeges/ipad/bedroom-2x.jpg 2x"
+            type="image/jpg"
+             />
+     <source
+        media="(max-width: 1023px)"
+          srcset="
+           ./imeges/iphone/bedroom.jpg 1x,
+            ./imeges/iphone/bedroom-2x.jpg 2x"
+            type="image/jpg"
+            />
+     <img class="imeges"
+        src="/imeges/desktop/bedroom.jpg" alt="кімната" width="460">
+     </picture>
+    <ul class="imeges-list list">
+      <li class="imeges-item">
+        <picture>
+          <source
+                media="(min-width: 1280px)"
+                 srcset="
+                  ./imeges/desktop/bathroom.jpg 1x,
+                  ./imeges/desktop/bathroom-2x.jpg 2x"
+                   type="image/jpg"
+                  />
+          <source
+                media="(min-width: 1024px)"
+                  srcset="
+                   ./imeges/ipad/bathroom.jpg 1x,
+                  ./imeges/ipad/bathroom-2x.jpg 2x"
+                  type="image/jpg"
+                   />
+           <source
+              media="(max-width: 1023px)"
+                srcset="
+                 ./imeges/iphone/bathroom.jpg 1x,
+                  ./imeges/iphone/bathroom-2x.jpg 2x"
+                  type="image/jpg"
+                  />
+           <img class="img"
+              src="/imeges/desktop/bathroom.jpg" alt="умивальник" width="250">
+           </picture>
+      </li>
+      <li class="imeges-item">
+        <picture>
+          <source
+                media="(min-width: 1280px)"
+                 srcset="
+                  ./imeges/desktop/сup.jpg 1x,
+                  ./imeges/desktop/сup-2x.jpg 2x"
+                   type="image/jpg"
+                  />
+          <source
+                media="(min-width: 1024px)"
+                  srcset="
+                   ./imeges/ipad/сup.jpg 1x,
+                  ./imeges/ipad/сup-2x.jpg 2x"
+                  type="image/jpg"
+                   />
+           <source
+              media="(max-width: 1023px)"
+                srcset="
+                 ./imeges/iphone/сup.jpg 1x,
+                  ./imeges/iphone/сup-2x.jpg 2x"
+                  type="image/jpg"
+                  />
+           <img class="img"
+              src="/imeges/desktop/сup.jpg" alt="чашка" width="250">
+           </picture>
+      </li>
+    </ul>
+    <ul class="svg-list list">
+      <li class="svg-item">
+        <svg class="svg-icon" viewBox="0 0 32 32" widht="32" hight="32">
+          <use class="svg-icon" href="./imeges/slider/sprite#icon-cil_arrow-left"></use>
+        </svg>
+      </li>
+      <li>
+        <svg class="svg-icon" viewBox="0 0 32 32" widht="32" hight="32">
+          <use  href="./imeges/slider/sprite#icon-cil_arrow-right"></use>
+        </svg>
+      </li>
+    </ul>
+     <div class="hotel-wrapper">
+      <ul class="btn-list list">
+        <li class="hotel__btn-titel">
+          <a  href=./double-room.html><button 
+            class="hotel__btn" type="button">Детальніше</button></a>
+        </li>
+    <li class="hotel__btn-titel">
+    <button class="hotel__btn" type="button">Переглянути ціни</button>
+  </li>
+  </ul>
+</div>
+  </div>
+</section>
