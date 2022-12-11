@@ -139,10 +139,10 @@
 }
 
 .contacts__icon {
-  //   @media screen and (max-width: 413px) {
-  //     width: 14px;
-  //     height: 14px;
-  //   }
+  @media screen and (max-width: 413px) {
+    width: 18px;
+    height: 18px;
+  }
   @include box(24);
   fill: rgba(199, 144, 2, 1);
 }
