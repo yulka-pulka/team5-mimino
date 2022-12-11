@@ -78,14 +78,14 @@
   src: url(../fonts/Montserrat-Bold.ttf);
   font-style: normal;
   color: getColor('accent-color');
-  @include font(16px, 20px, 500, 0.02em);
+  @include font(16px, 20px, 400, 0.02em);
 
   display: flex;
   align-items: center;
   padding: 28px 0;
 
   @include tablet {
-    @include font(20px, 24px, 500, 0.02em);
+    @include font(20px, 24px, 400, 0.02em);
     padding: 30px 0;
   }
 
