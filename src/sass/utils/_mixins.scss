@@ -2,7 +2,7 @@
 
 @mixin font($size, $height, $weight, $spacing) {
   font-size: $size;
-  line-height: $height/$size;
+  line-height: calc($height/$size);
   font-weight: $weight;
   letter-spacing: $spacing;
 }

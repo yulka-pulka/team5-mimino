@@ -17,12 +17,10 @@
 .footer__container {
     display: flex;
 
-    // @media screen (min-width: 1024px) {
-        
-    // }
 }
+
 .footer__logo {
-    @include font (40px, 1.075, 700, 0.3em);
+    @include font(40px, 43px, 700, 0.3em);
     font-family: Film P3;
 
     text-transform: uppercase;
@@ -33,14 +31,18 @@
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+    @media screen and (max-width: 414px) {
+        @include font(9vw, 10vw, 700, 0.3em);
+        
+    }
 
     @media screen and (min-width: 1024px) {
-        @include font (64px, 1.078, 700, 0.3em); 
+        @include font (64px, 69px, 700, 0.3em); 
         margin: 117px 0 117px 107px;
     }
 
     @media screen and (min-width: 1280px) {
-        @include font (64px, 1.078, 700, 0.3em); 
+        @include font (64px, 69px, 700, 0.3em); 
         margin: 120px 0 120px 131px;
     }
 
@@ -73,15 +75,19 @@
         margin-bottom: 16px;
     }
 
-    @include font (24px, 1.2, 400, 0.02em);
+    @include font (20px, 24px, 400, 0.02em);
     font-family: Montserrat;
 
+    @media screen and (max-width: 414px) {
+        @include font (4vw, 5vw, 400, 0.02em);
+    }
+
     @media screen and (min-width: 1024px) {
-        @include font (20px, 1.2, 400, 0.02em); 
+        @include font (20px, 24px, 400, 0.02em); 
     }
 
     @media screen and (min-width: 1280px) {
-        @include font (20px, 1.2, 400, 0.02em); 
+        @include font (20px, 24px, 400, 0.02em); 
     }
 }
 
@@ -122,12 +128,12 @@
 
 .social__item {
     &:not(:last-child) {
-        margin-bottom: 25px;
+        margin-bottom: 25px; 
     }
 }
 
 .social__link {
-    @include font (16px, 1.25, 400, 0.02em);
+    @include font (16px, 20px, 400, 0.02em);
     font-family: Montserrat;
 
     color: map-get($colors, 'accent-color');
