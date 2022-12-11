@@ -70,14 +70,16 @@ body {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  @media screen and (min-width: 414px) {
-    max-width: 414px;
+  @media screen and (min-width: $mobile) {
+    max-width: $mobile;
   }
-  @media screen and (min-width: 1024px) {
-    max-width: 960px;
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+    padding-left: 47px;
+    padding-right: 47px;
   }
-  @media screen and (min-width: 1280px) {
-    max-width: 1110px;
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
     padding-left: 85px;
     padding-right: 85px;
   }
