@@ -3,7 +3,8 @@ import Swiper from 'swiper';
 // import Swiper styles
 import 'swiper/swiper.scss';
 
-      var swiper = new Swiper(".mini-slider-1", {
+const swiper = new Swiper(".mini-slider-1", {
+        speed: 2500,
         slidesPerView: 2,
         spaceBetween: 20,
         loop: true,
