@@ -1,0 +1,45 @@
+//----------Buttons
+.btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: getColor('accent-color');
+  min-width: 236px;
+  padding: 12px 22px;
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffffff;
+  border-radius: 25px;
+  cursor: pointer;
+  @include tablet {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover,
+  &:focus {
+    @include tablet {
+      background-color: #ffffff;
+      border: none;
+    }
+  }
+  &:active {
+    @include tablet {
+      border-color: #ffffff;
+    }
+  }
+}
+
+.btn--color-black {
+  background: #000000;
+  &:hover,
+  &:focus {
+    @include tablet {
+      border: 2px solid getColor('accent-color');
+    }
+  }
+  &:active {
+    @include tablet {
+      border: 2px solid getColor('accent-color');
+    }
+  }
+}
