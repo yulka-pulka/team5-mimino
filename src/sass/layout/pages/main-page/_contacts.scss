@@ -33,21 +33,14 @@
 }
 
 .contacts__logo {
-  font-family: 'Film P3', sans-serif;
-  @include font(40, 69, 700, 0.3em);
-  color: #494848;
   margin-bottom: 12px;
-  text-transform: uppercase;
 
   @include tablet {
-    font-size: 64px;
-    line-height: 1.08;
     margin-bottom: 8px;
   }
 
   @include desktop {
     margin-bottom: 16px;
-    color: getColor('contacts');
   }
 }
 
@@ -95,6 +88,10 @@
   }
 }
 
+.contacts__item:last-child {
+  gap: 0;
+}
+
 .contacts__text {
   @media screen and (max-width: 413px) {
     font-size: 4.3vw;
@@ -104,12 +101,6 @@
   font-family: 'Montserrat', sans-serif;
   color: getColor('second-accent');
   min-width: 124px;
-}
-
-.contacts__text.is-hidden {
-  @include tablet {
-    display: none;
-  }
 }
 
 .contacts__link-wrap {
@@ -171,7 +162,7 @@
 
   @include tablet {
     max-width: 535px;
-    height: 412px;
+    height: 422px;
     margin: 0;
   }
 
