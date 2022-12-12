@@ -56,6 +56,10 @@ width: 421px;
     width: 292px;}
   }
   .drinks_wrap{
+    @media screen and (min-width: 320px){
+      width: 200px;
+      padding-bottom: 5px;
+    }
     @media screen and (min-width: $mobile){
      width: 220px;
       // padding-bottom: 11px;
@@ -70,6 +74,10 @@ width: 421px;
   }
  
   .dessert_wrap{
+    @media screen and (min-width: 320px){
+      width: 200px;
+      padding-bottom: 5px;
+    }
     @media screen and (min-width: $mobile){
      width: 220px;
       // padding-bottom: 11px;
@@ -86,7 +94,16 @@ width: 421px;
    display: block;
  }
   .menu_title{
+    @media screen and (min-width: 320px){
+      font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+font-size: 7vw;
+padding-top: 10px;
+padding-bottom: 10px;
+    }
     @media screen and (min-width: $mobile){
+      @include font(32px, 37px, 700, 0.02em);
       padding-top: 32px;
       padding-bottom: 16px;
     }
@@ -103,6 +120,16 @@ width: 421px;
     color:map-get($colors, 'primary-title')
   }
   .dishes_title {
+    @media screen and (min-width: 320px){
+    font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+font-size: 6vw;
+padding-top: 10px;padding-bottom: 10px;}
+    @media screen and (min-width: $mobile){
+      padding-bottom: 10px;
+      padding-top: 10px;
+    }
     @media screen and (min-width: $mobile){
       @include font(20px, 23px, 700, 0.02em);
       padding-top: 16px;
@@ -123,6 +150,12 @@ width: 421px;
     color:map-get($colors, 'primary-title')
   }
   .dishes_name {
+    @media screen and (min-width: 320px){
+      font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 4vw;
+    font-weight: 500;
+    }
     @media screen and (min-width: $mobile){
       @include font(14px, 17px, 500, 0.02em);
     }
@@ -136,6 +169,12 @@ width: 421px;
   }
   .drinks_name,
   .dessert_name{
+    @media screen and (min-width: 320px){
+      font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 4vw;
+    font-weight: 500;
+    }
     @media screen and (min-width: $mobile){
       @include font(14px, 17px, 500, 0.02em) 
     }
@@ -161,7 +200,16 @@ width: 421px;
     color:map-get($colors, 'primary-title')
   }
   .dishes_weight{
-    @media screen and (min-width: $mobile){
+    @media screen and (min-width: 320px){
+   width: 100px;
+   padding-left: 10px;
+      font-size: 3vw;
+    font-weight: 500;
+      font-family: 'Montserrat';
+    font-style: normal;   
+    }
+    @media screen and (min-width: $mobile)
+    {@include font(14px, 17px, 300, 0.02em);
       padding-bottom: 20;
       padding-left: 30px;
       width: 165px;
@@ -178,6 +226,13 @@ width: 421px;
     font-style: normal;    
   }
   .dishes_price{
+    @media screen and (min-width: 320px){
+      margin-left: 5px;
+      font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 3vw;
+    }
     @media screen and (min-width: $mobile){
       @include font(14px, 17px, 700, 0.02em); 
       margin-left: 28px;
@@ -196,6 +251,13 @@ color:map-get($colors, 'primary-title')}
 
 .dishes_price-patatoes,
 .dishes_price-tiramisu{
+  @media screen and (min-width: 320px){
+    margin-left: 10px;
+    margin-left: 10px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 3vw;}
   @media screen and (min-width: $mobile){
     @include font(14px, 17px, 700, 0.02em); 
     margin-left: 35px;
@@ -214,6 +276,15 @@ color:map-get($colors, 'primary-title')
 }
 
 .drinks_price{
+  @media screen and (min-width: 320px){
+  margin-left: 10px;
+      font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 3vw;}
+  @media screen and (min-width: $mobile){
+    margin-left: 10px;
+  }
   @media screen and (min-width: $mobile){
     @include font(14px, 17px, 700, 0.02em); 
     margin-left: 25px;
@@ -229,6 +300,16 @@ color:map-get($colors, 'primary-title')
 font-style: normal;
 }
 .drinks_price-espresso{
+  @media screen and (min-width: 320px){
+    margin-left: 10px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 3vw;
+  }
+  @media screen and (min-width: $mobile){
+    margin-left: 10px;
+  }
   @media screen and (min-width: $mobile){
     @include font(14px, 17px, 700, 0.02em); 
     margin-left: 35px;
@@ -245,6 +326,17 @@ font-style: normal;
  
 }
 .drinks_price-americano{
+  @media screen and (min-width: 320px){
+    margin-left: 10px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 3vw;
+  }
+  @media screen and (min-width: $mobile){
+    margin-left: 10px;
+    
+  }
   @media screen and (min-width: $mobile){
     @include font(14px, 17px, 700, 0.02em); 
     margin-left: 28px;
@@ -271,42 +363,7 @@ font-style: normal;
 .list{
   padding-bottom: 0;
 }
-// .button_menu{
-//   @media screen and (min-width: $mobile){
-//     justify-content: center;
-//     border: none; 
-//   }
-//   @media screen and (min-width: $tablet){
-//     text-align: center;
-//     margin-left: auto;
-//     border: none; 
-//   }
-//   @media screen and (min-width: $desktop){
-//   text-align: center;
-//    margin-left: auto;
-//    border: 2px solid #FFFDEE;}
-//     color:map-get($colors, 'accent-color');
-//     min-width: 236px;
-//     cursor: pointer;
-//     background:map-get($colors, 'primary-title');
-//     border-radius: 25px;
-//     padding: 12px 22px;
-//     @include font(16px, 20px, 700, 0.02em);
-//     font-family: 'Montserrat';
-// font-style: normal;
-//    &:hover, 
-//    &:focus{
-//     background:map-get($colors, 'white-text');
-//     border: 2px solid #F3C653;
-//    } 
-//    transition: background-color .25s cubic-bezier(.4, 0, .2, 1), border-color .25s cubic-bezier(.4, 0, .2, 1);
-// }
-// .button_menu:focus,
-// .button_menu:hover{
-//   @media screen and (min-width: $mobile){}
-//   background:map-get($colors, 'white-text');
-//   border: none;
-//  } 
+
 
 .btn {
   @media screen and (min-width: $mobile){
