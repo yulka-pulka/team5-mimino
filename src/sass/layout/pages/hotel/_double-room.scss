@@ -34,31 +34,22 @@
     }
 
 }
-.hotel__title{
-    @media screen and (min-width: 320px){
-        font-family: 'Film P3';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 10vw;
-        line-height: 1.1;
-        margin-bottom: 22px;
-        color: #494848;
+.logo-page {
+    font-family: 'Film P3', sans-serif;
+    @include font(40, 69, 700, 0.3em);
+    color: #494848;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    @include tablet {
+      font-size: 64px;
+      line-height: 1.08;
+      margin-bottom: 62px;
     }
-    @media screen and (min-width: 414px){
-        font-size: 40px;
-        letter-spacing: 0.3em;
-        margin-bottom: 32px;
-    }
-    @media screen and (min-width: 1024px){
-        font-size: 64px;
-        line-height: 1.1;
-        margin-bottom: 62px;
-    }
-    @media screen and (min-width: 1280px){
+    @include desktop {
         margin-bottom: 72px;
-    }
+      }
 
-}
+  }
 .hotel__room{
     @media screen and (min-width: 320px){
         font-family: 'Times New Roman';
