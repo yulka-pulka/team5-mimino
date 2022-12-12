@@ -1,0 +1,102 @@
+.button-box {
+    text-align: center;
+    @include tablet {
+      display: flex;
+      padding-bottom: 49px;
+      order: 1;
+    }
+    @include desktop {
+      padding-bottom: 65px;
+    }
+
+    & .btn {
+      &:not(:last-child) {
+        margin-bottom: 24px;
+        @include tablet {
+          margin-right: 40px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  .hotel {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/homepage/details/hotel/bg-iphone.jpg);
+  
+    @include retina2x {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/homepage/details/hotel/bg-iphone-2x.jpg);
+    }
+  
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/homepage/details/hotel/bg-iphone.jpg);
+      @include retina2x {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/homepage/details/hotel/bg-iphone-2x.jpg);
+      }
+    }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/homepage/details/hotel/bg-ipad.jpg);
+      @include retina2x {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/homepage/details/hotel/bg-ipad-2x.jpg);
+      }
+    }
+    @include desktop {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/homepage/details/hotel/bg-des.jpg);
+      @include retina2x {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/homepage/details/hotel/bg-des-2x.jpg);
+      }
+    }
+  }
+  
+  .hotel__article {
+    // display: flex;
+  }
+
+  .about__hotel_logotxt {
+    font-family: Film P3;
+
+    @include font (40px, 43px, 700, 0.3em); 
+    color: map-get($colors, 'white-text');
+
+    padding-top: 24px;
+    margin-bottom: 12px;
+
+    text-align: center;
+  }
+
+  .about__hotel_header {
+    font-family: Montserrat;
+    text-align: center;
+
+    @include font (20px, 24px, 700, 0.02em); 
+    color: map-get($colors, 'white-text');
+  }
+
+  .about__hotel_subtxt {
+    margin-left: 17px;
+
+    @include font (12px, 15px, 600, 0.02em); 
+    color: map-get($colors, 'secondary-text');
+    font-family: Montserrat;
+
+    width: 243px;
+
+
+  }
+  
