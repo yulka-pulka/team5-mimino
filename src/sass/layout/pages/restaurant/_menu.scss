@@ -16,14 +16,7 @@ width: 421px;
     padding: 0;
     border: none;
   }
-  pre{
-    margin: 0;
-    @include font(10px, 12px, 400, 0.02em);
-    text-align: left;
-    font-family: 'Montserrat';
-    font-style: normal;    
-    color:map-get($colors, 'primary-title')
-  }
+ 
   .menu{background-color:map-get($colors, 'secondary-bg')
 
   }
