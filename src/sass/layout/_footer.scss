@@ -16,6 +16,7 @@
 
 .footer__container {
     display: flex;
+    background: #0E0C07;
 
 }
 
@@ -42,8 +43,8 @@
     }
 
     @media screen and (min-width: 1280px) {
-        @include font (64px, 69px, 700, 0.3em); 
-        margin: 120px 0 120px 131px;
+        @include font (64px, 68px, 700, 0.3em); 
+        margin: 118px 0 118px 131px;
     }
 
     &:hover,
@@ -74,7 +75,6 @@
     
 }
 
-
 .footer__item {
     &:not(:last-child) {
         margin-bottom: 16px;
@@ -92,19 +92,19 @@
         color: map-get($colors, 'second-accent');
     }
 
-    @include font (20px, 24px, 400, 0.02em);
+    @include font (20px, 24px, 500, 0.02em);
     font-family: Montserrat;
 
     @media screen and (max-width: 414px) {
-        @include font (4vw, 5vw, 400, 0.02em);
+        @include font (4vw, 5vw, 500, 0.02em);
     }
 
     @media screen and (min-width: 1024px) {
-        @include font (20px, 24px, 400, 0.02em); 
+        @include font (20px, 24px, 500, 0.02em); 
     }
 
     @media screen and (min-width: 1280px) {
-        @include font (20px, 24px, 400, 0.02em); 
+        @include font (20px, 24px, 500, 0.02em); 
     }
 }
 
@@ -161,7 +161,7 @@
     position: relative;
 
     &:not(:last-child) {
-        margin-bottom: 25px; 
+        margin-bottom: 12px; 
     }
 }
 
@@ -178,7 +178,7 @@
         border: 0.5px solid map-get($colors, 'accent-color');
         border-radius: 2px;
         
-        padding: 10px 0 10px 12px;
+        padding: 8px 0 10px 12px;
         & .icon {
             position: absolute;
             top: 50%;
@@ -223,7 +223,5 @@
         align-items: baseline;
         margin-left: 210px;
     }
-
-    
 }
 
