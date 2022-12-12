@@ -271,43 +271,78 @@ font-style: normal;
 .list{
   padding-bottom: 0;
 }
-.button_menu{
-  @media screen and (min-width: $mobile){
-    justify-content: center;
-    border: none; 
-  }
-  @media screen and (min-width: $tablet){
-    text-align: center;
-    margin-left: auto;
-    border: none; 
-  }
-  @media screen and (min-width: $desktop){
-  text-align: center;
-   margin-left: auto;
-   border: 2px solid #FFFDEE;}
-    color:map-get($colors, 'accent-color');
-    min-width: 236px;
-    cursor: pointer;
-    background:map-get($colors, 'primary-title');
-    border-radius: 25px;
-    padding: 12px 22px;
-    @include font(16px, 20px, 700, 0.02em);
-    font-family: 'Montserrat';
-font-style: normal;
-   &:hover, 
-   &:focus{
-    background:map-get($colors, 'white-text');
-    border: 2px solid #F3C653;
-   } 
-   transition: background-color .25s cubic-bezier(.4, 0, .2, 1), border-color .25s cubic-bezier(.4, 0, .2, 1);
-}
-.button_menu:focus,
-.button_menu:hover{
-  @media screen and (min-width: $mobile){}
-  background:map-get($colors, 'white-text');
-  border: none;
- } 
+// .button_menu{
+//   @media screen and (min-width: $mobile){
+//     justify-content: center;
+//     border: none; 
+//   }
+//   @media screen and (min-width: $tablet){
+//     text-align: center;
+//     margin-left: auto;
+//     border: none; 
+//   }
+//   @media screen and (min-width: $desktop){
+//   text-align: center;
+//    margin-left: auto;
+//    border: 2px solid #FFFDEE;}
+//     color:map-get($colors, 'accent-color');
+//     min-width: 236px;
+//     cursor: pointer;
+//     background:map-get($colors, 'primary-title');
+//     border-radius: 25px;
+//     padding: 12px 22px;
+//     @include font(16px, 20px, 700, 0.02em);
+//     font-family: 'Montserrat';
+// font-style: normal;
+//    &:hover, 
+//    &:focus{
+//     background:map-get($colors, 'white-text');
+//     border: 2px solid #F3C653;
+//    } 
+//    transition: background-color .25s cubic-bezier(.4, 0, .2, 1), border-color .25s cubic-bezier(.4, 0, .2, 1);
+// }
+// .button_menu:focus,
+// .button_menu:hover{
+//   @media screen and (min-width: $mobile){}
+//   background:map-get($colors, 'white-text');
+//   border: none;
+//  } 
 
+.btn {
+  @media screen and (min-width: $mobile){
+        justify-content: center;
+        border: none; 
+      }
+      @media screen and (min-width: $tablet){
+        text-align: center;
+        margin-left: auto;
+        border: none; 
+      }
+      @media screen and (min-width: $desktop){
+        border:2px solid #FFFDEE;
+      }
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.02em;
+  color: getColor('accent-color');
+  min-width: 236px;
+  padding: 12px 22px;
+  background: map-get($colors, 'primary-title');
+  border-radius: 25px;
+  cursor: pointer;
+  @media screen and (min-width: $tablet){
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:hover,
+  &:focus {
+    @media screen and (min-width: $tablet) {
+      background-color: #ffffff;
+      border: none;
+    }
+  }
+  
+}
 .button_wrap{
   display: flex;
   justify-content: center;
