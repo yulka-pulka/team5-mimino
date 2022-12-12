@@ -93,7 +93,7 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  background-image: url(../images/galochka.svg);
+  background-image: url(../images/arrow-down.svg);
   background-repeat: no-repeat;
   background-size: contain;
   width: 24px;
@@ -192,7 +192,7 @@
     width: 288px;
   }
 }
-.btn-room {
+.btn-modal-room {
   width: 100%;
   height: 64px;
   background-color: map-get($colors, 'primary-title');
@@ -204,6 +204,11 @@
   font-size: 20px;
   line-height: 1.2;
   color: #ffffff;
+  &:hover,
+  &:focus {
+    background-color: map-get($colors, 'accent-color');
+    color: map-get($colors, 'primary-title');
+  }
   @include mobile {
     min-width: 384px;
   }
