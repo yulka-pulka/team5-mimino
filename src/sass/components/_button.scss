@@ -19,12 +19,27 @@
   &:focus {
     @include tablet {
       background-color: #ffffff;
-      border-color: getColor('accent-color');
+      border: none;
     }
   }
   &:active {
     @include tablet {
       border-color: #ffffff;
+    }
+  }
+}
+
+.btn--color-black {
+  background: #000000;
+  &:hover,
+  &:focus {
+    @include tablet {
+      border: 2px solid getColor('accent-color');
+    }
+  }
+  &:active {
+    @include tablet {
+      border: 2px solid getColor('accent-color');
     }
   }
 }
