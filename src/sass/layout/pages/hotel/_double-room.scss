@@ -1,22 +1,25 @@
 .double{
-    @media screen and (min-width: 414px){
+    @media screen and (min-width: 320px){
         background-color: #FFFDEE;
         margin-left: auto;
         margin-right: auto;
+        width: 320px;
+        padding-top: 22px;
+        padding-bottom: 22px;
+    }
+    @media screen and (min-width: 414px){
         width: 414px;
         padding-top: 32px;
         padding-bottom: 32px;
     }
     @media screen and (min-width: 1024px){
         width: 1024px;
-        height: 838px;
         padding-top: 64px;
         padding-bottom: 104px;
         position: relative;
     }
     @media screen and (min-width: 1280px){
         width: 1280px;
-        height: 956px;
         padding-top: 72px;
         padding-bottom: 112px;
     }
@@ -28,10 +31,11 @@
         font-style: normal;
         font-weight: 400;
         font-size: 7vw;
+        line-height: 1.15;
+        margin-bottom: 4px;
     }
     @media screen and (min-width: 414px){
         font-size: 20px;
-        line-height: 1.15;
         color: #B4B4B4;
         margin-bottom: 8px;
     }
@@ -48,10 +52,11 @@
         font-style: normal;
         font-weight: 700;
         font-size: 13vw;
+        line-height: 1.1;
+        margin-bottom: 22px;
     }
     @media screen and (min-width: 414px){
         font-size: 40px;
-        line-height: 1.1;
         letter-spacing: 0.3em;
         color: #494848;
         margin-bottom: 32px;
@@ -72,10 +77,10 @@
         font-style: normal;
         font-weight: 700;
         font-size: 8vw;
+        line-height: 1.2;
     }
     @media screen and (min-width: 414px){
         font-size: 24px;
-        line-height: 1.2;
         color: #000000;
         letter-spacing: 0.05em;
     }
@@ -93,10 +98,11 @@
         font-style: normal;
         font-weight: 700;
         font-size: 4vw;
+        line-height: 1.25;
+        margin-top: 10px;
     }
     @media screen and (min-width: 414px){
         font-size: 12px;
-        line-height: 1.25;
         letter-spacing: 0.02em;
         color: #7A7A7A; 
         width: 258px;
@@ -115,20 +121,23 @@
 }
 .images{
     @media screen and (min-width: 320px){
-        width: 244px;
-        height: 322px;
-        margin-left: 140px;
+        width: 194px;
+        height: 272px;
+        margin-left: 100px;
     }
     @media screen and (min-width: 414px){
         width: 244px;
         height: 322px;
         margin-left: 140px;
     }
+    @media screen and (max-width: 500px){
+        margin-top: 32px;
+    }
     @media screen and (min-width: 1024px){
         display: block;
         position: absolute;
         content: "";
-        top: -33px;
+        top: -32px;
         right: 112px;
         width: 400px;
         height: 524px;
@@ -140,13 +149,18 @@
     }
 
     &-list{
+        @media screen and (min-width: 320px){
+            width: 404px;
+            display: flex;
+            gap: 16px;
+            margin-top: 32px; 
+        }
         @media screen and (min-width: 414px){
             width: 404px;
             display: flex;
             gap: 16px;
-            margin-top: 32px;
-   
         }
+        
         @media screen and (max-width: 500px){
             margin-left: -115px;
         }
@@ -162,10 +176,14 @@
     }
 }
 .slider{
+    @media screen and (min-width: 320px){
+        width: 304px;
+        height: 194px;
+        background-color: #494848;
+    }
     @media screen and (min-width: 414px){
         width: 404px;
         height: 194px;
-        background-color: #494848;
     } 
     @media screen and (min-width: 1280px){
         width: 540px;
@@ -222,6 +240,7 @@
     letter-spacing: 0.02em;
     color: #F3C653;
     cursor: pointer;
+    text-align: center;
 }
 .hotel__btn-titel :hover, 
 .hotel__btn-titel :focus{
@@ -230,9 +249,15 @@
 }
 
 .btn-list {
+    @media screen and (min-width: 320px){
+        align-items: center;
+        justify-content: center;
+        padding-top: 62px; 
+    }
     @media screen and (min-width: 414px){
         align-items: center;
         justify-content: center;
+        padding-top: 72px;
     }
     
     @media screen and (min-width: 1024px){
@@ -245,9 +270,10 @@
     }
 }
 .wrapper{
-    @media screen and (min-width: 414px){
+    @media screen and (min-width: 320px){
+        margin-top: 32px;
+        text-align: center;
         align-items: center;
-        justify-content: center;
     }
     @media screen and (min-width: 1024px){
         display: flex;
