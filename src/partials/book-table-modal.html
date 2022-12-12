@@ -1,0 +1,90 @@
+<!-- Модальне вікно замовити столик -->
+<div class="overlay js-overlay-modal">
+</div>
+    <div class="modal modal-table" data-modal="2">
+        <button type="button" class="modal-table-close modal__cross js-modal-close">
+            <svg class="modal-table-close-icon" width="24" height="24">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <p class="modal-table-title">Забронювати столик</P>
+            <form class="modal-table-form">              
+                   <div class="modal-form-wrap">
+                       <div class="table-input-left">
+                           <div class="table-label-wrap">
+                               <label>
+                                    <input 
+                                    type="text" 
+                                    name="user-name" 
+                                    class="modal-table-input" 
+                                    placeholder="Ваше ім'я" required>
+                                    <span class="modal-table-text"
+                                  >На кого забронювати столик?</span>
+                               </label>
+                           </div>
+                            <div class="table-label-wrap">
+                               <label>
+                                    <input type="tel" name="user-tel" class="modal-table-input" 
+                                    placeholder="+38 (___) ___-__-__"
+                                    pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" required>
+                                    <span class="modal-table-text modal-text-tel">Номер телефону</span>
+                               </label>
+                            </div>
+                       </div>
+                       <div class="table-label-right">
+                           <div class="table-label-wrap"> 
+                            <label class="table-label">
+                                <select name="number" class="table-select">
+                                    <option value="one" class="number-people">1</option>
+                                    <option value="two">2</option>
+                                    <option value="three">3</option>
+                                    <option value="four">4</option>
+                                    <option value="five">5</option>
+                                    <option value="six">6</option>
+                                    <option value="seven">7</option>
+                                    <option value="eight">8</option>
+                                </select>
+                                <span class="modal-table-text">Столик на яку кількість осіб?</span>
+                            </label>
+                            </div>
+                            <div class="table-label-wrap">
+                               <label class="table-label">
+                                <select name="date" class="table-select">
+                                    <optgroup label="Цей тиждень">
+                                        <option value="today">Сьогодні</option>
+                                        <option value="today">ПН</option>
+                                        <option value="today">ВТ</option>
+                                        <option value="today">СР</option>
+                                        <option value="today">ЧТ</option>
+                                        <option value="today">ПТ</option>
+                                        <option value="today">СБ</option>
+                                        <option value="today">НД</option>
+                                      </optgroup>
+                                      <optgroup label="Наступний місяць">
+                                        <option value="today">січень</option>
+                                        <option value="today">лютий</option>
+                                        <option value="today">березень</option>
+                                        <option value="today">квітень</option>
+                                        <option value="today">травень</option>
+                                        <option value="today">червень</option>
+                                        <option value="today">липень</option>
+                                        <option value="today">серпень</option>
+                                        <option value="today">вересень</option>
+                                        <option value="today">жовтень</option>
+                                        <option value="today">листопад</option>
+                                        <option value="today">грудень</option>
+                                      </optgroup>
+                                </select>
+                                    <span class="modal-table-text modal-text-data">На яку дату бронювати?</span>
+                               </label>
+                            </div>
+                       </div>
+                   </div>
+              
+              
+                    <button type="submit" class="btn-modal-table">
+                        Оформити бронування
+                      </button>
+                
+            </form>
+    </div>
