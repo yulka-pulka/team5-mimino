@@ -80,6 +80,10 @@
     text-transform: uppercase;
     width: 303px;
     margin: 0 auto;
+    @media screen and (max-width: $mobile) {
+      font-size: 23vw;
+      width: 73vw;
+    }
     @include tablet {
       @include font(128px, 138px, 700, 0.3em);
       width: 404px;
@@ -89,6 +93,9 @@
     font-family: 'Montserrat', sans-serif;
     @include font(16px, 20px, 600, 0.02em);
     margin-top: 24px;
+    @media screen and (max-width: $mobile) {
+      font-size: 4vw;
+    }
     @include tablet {
       @include font(20px, 24px, 600, 0.02em);
       margin-top: 16px;
@@ -101,6 +108,9 @@
     font-family: 'Times New Roman', serif;
     @include font(32px, 37px, 700, 0.05em);
     margin-top: 40px;
+    @media screen and (max-width: $mobile) {
+      font-size: 8vw;
+    }
     @include tablet {
       @include font(36px, 41px, 700, 0.05em);
       margin-top: 56px;
@@ -160,6 +170,7 @@
     &__link {
       display: flex;
       align-items: center;
+      text-decoration: none;
 
       padding: 9px 6px 9px 0;
       color: #e5e5e5;
@@ -209,36 +220,6 @@
       @include tablet {
         color: rgba(255, 255, 255, 0.7);
       }
-    }
-  }
-}
-//----------Buttons
-.btn {
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: getColor('accent-color');
-  min-width: 236px;
-  padding: 12px 22px;
-  background: rgba(0, 0, 0, 0.4);
-  border: 2px solid #ffffff;
-  border-radius: 25px;
-  cursor: pointer;
-  @include tablet {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &:hover,
-  &:focus {
-    @include tablet {
-      background-color: #ffffff;
-      border-color: getColor('accent-color');
-    }
-  }
-  &:active {
-    @include tablet {
-      border-color: #ffffff;
     }
   }
 }
