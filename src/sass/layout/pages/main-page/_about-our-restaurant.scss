@@ -26,12 +26,7 @@
         line-height: 1.15;
         color: #B4B4B4;
 
-        @media screen and (max-width: 413px) {
-                & {
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-            }
+    
 
 
 
@@ -57,12 +52,7 @@
         color: #494848;
         margin-top: 12px;
 
-        @media screen and (max-width: 413px) {
-                & {
-                    margin-left: auto;
-                    margin-right: auto;
-                }
-            }
+       
 
 
         @media screen and (min-width: 1024px) {
@@ -92,8 +82,7 @@
 
         @media screen and (max-width: 413px) {
                 & {
-                    margin-left: auto;
-                    margin-right: auto;
+                    width: 62vw;
                 }
             }
 
@@ -129,7 +118,8 @@
             @media screen and (max-width: 413px) {
                     & {
                        
-                        margin-right: auto;
+                        width: 39vw;
+                        margin-top: 5vh;
                     }
                 }
 
@@ -163,8 +153,8 @@
 
     @media screen and (max-width: 413px) {
             & {
-                margin-left: auto;
-                margin-right: auto;
+                width: 59vw;
+                margin-left:34vw ;
             }
         }
 
@@ -192,8 +182,7 @@
 
         @media screen and (max-width: 413px) {
                 & {
-                    margin-left: auto;
-                    margin-right: auto;
+                    width: 48vw;
                 }
             }
 
