@@ -168,6 +168,7 @@
   background-color: transparent;
   border: 1px solid map-get($colors, 'second-accent');
   appearance: none;
+  z-index: 2;
   @include mobile {
     font-size: 20px;
   }
