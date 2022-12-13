@@ -1,0 +1,54 @@
+<div class="overlay js-overlay-modal"></div>
+<div class="modal modal-price" data-modal="3">
+  <button
+    type="button"
+    class="modal-price__close modal__cross js-modal-close"
+    data-modal="3"
+  >
+    <svg width="24" height="24">
+      <use href="./images/sprite.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h3 class="modal-price__title">Ціни на номер</h3>
+  <p class="modal-price__subtitle">Двомісний люкс</p>
+  <p class="modal-price__text">Категорія номеру</p>
+  <form action="" class="modal-price__form" name="costForm" autocomplete="on">
+    <ul class="list modal-price__list">
+      <li class="modal-price__item">
+        <select
+          name="quantity room"
+          id="quantityRoom"
+          class="modal-price__select"
+        >
+          <option value="1">1</option>
+          <option value="2" selected>2</option>
+          <option value="3">3</option>
+        </select>
+        <label for="quantityRoom" class="modal-price__label"
+          >Кількість ночей</label
+        >
+      </li>
+      <li class="modal-price__item">
+        <input
+          type="text"
+          class="modal-price__input"
+          name="price"
+          id="price-room"
+          value="1000"
+        />
+        <label
+          for="price-room"
+          class="modal-price__label modal-price__label--lowercase"
+          >Грн</label
+        >
+      </li>
+    </ul>
+
+    <button
+      type="submit"
+      class="modal-price__button btn—color-black modal__cross js-modal-close"
+    >
+      Забронювати номер
+    </button>
+  </form>
+</div>
