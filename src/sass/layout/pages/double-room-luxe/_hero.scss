@@ -1,0 +1,91 @@
+.hero-room {
+  position: relative;
+  padding: 0;
+}
+
+.room-slide {
+  width: 100%;
+}
+
+.swiper-button {
+  fill: currentColor;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.swiper-button-next:hover,
+.swiper-button-next:focus,
+.swiper-button-prev:hover,
+.swiper-button-prev:focus {
+  color: getColor('accent-color');
+}
+
+.swiper-button-next {
+  right: 15px;
+  width: auto;
+  color: getColor('white-text');
+}
+
+.swiper-button-prev {
+  left: 15px;
+  width: auto;
+  color: getColor('white-text');
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: '';
+}
+
+.room-hero-wrap {
+  position: absolute;
+  top: 483px;
+  z-index: 1;
+  margin-left: 15px;
+  max-width: 325px;
+  // background-color: pink;
+}
+
+.room-hero-title {
+  margin-bottom: 14px;
+  font-family: 'Times New Roman';
+  font-size: 28px;
+  line-height: calc(32 / 28);
+  letter-spacing: 0.05em;
+  color: getColor('white-text');
+}
+
+.room-hero-title-caps {
+  text-transform: uppercase;
+}
+
+.room-hero-text {
+  margin-bottom: 16px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 12px;
+  line-height: calc(15 / 12);
+  letter-spacing: 0.02em;
+  color: getColor('white-text');
+}
+
+.room-social-list {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  list-style: none;
+}
+
+.room-social-item {
+  height: 24px;
+}
+
+.room-hero-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.room-btn:hover,
+.room-btn:focus {
+  background-color: getColor('white-text');
+}
