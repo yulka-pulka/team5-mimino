@@ -83,14 +83,14 @@
   color: getColor('primary-title');
   text-transform: uppercase;
 
-  @include tablet() {
+  @include tablet {
     font-size: 30px;
     line-height: calc(34 / 30);
     margin-bottom: 16px;
     padding-right: 54px;
   }
 
-  @include desktop() {
+  @include desktop {
     font-size: 36px;
     line-height: calc(41 / 36);
     margin-bottom: 24px;
