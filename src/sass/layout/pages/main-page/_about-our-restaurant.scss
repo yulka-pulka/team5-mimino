@@ -27,6 +27,13 @@
         line-height: 1.15;
         color: #B4B4B4;
 
+        @media screen and (max-width: 413px) {
+                & {
+                    
+                    font-size: 5vw;
+                }
+            }
+
     
 
 
@@ -52,7 +59,13 @@
         letter-spacing: 0.3em;
         color: #494848;
         margin-top: 12px;
-
+        
+        @media screen and (max-width: 413px) {
+                & {
+        
+                    font-size: 10vw;
+                }
+            }
        
 
 
@@ -84,6 +97,7 @@
         @media screen and (max-width: 413px) {
                 & {
                     width: 62vw;
+                    font-size: 3vw;
                 }
             }
 
@@ -120,7 +134,9 @@
                     & {
                        
                         width: 39vw;
-                        margin-top: 5vh;
+                        margin-top: 10vh;
+                        font-size: 3vw;
+                        height: 120px;
                     }
                 }
 
