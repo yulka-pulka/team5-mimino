@@ -211,6 +211,7 @@ margin-top: 10px;
     font-style: normal;
     font-size: 3vw;
     font-weight: 500;
+    padding-bottom: 5px;
     }
     @media screen and (min-width: $mobile){
       @include font(14px, 17px, 500, 0.02em) 
@@ -244,8 +245,8 @@ margin-top: 10px;
   }
   .dishes_weight{
     @media screen and (min-width: 320px){
-  width: 40%;
-   padding-left: 10px;
+  width: 30%;
+   padding-left: 9px;
       font-size: 3vw;
     font-weight: 300;
       font-family: 'Montserrat';
@@ -295,8 +296,7 @@ color:map-get($colors, 'primary-title')}
 .dishes_price-patatoes,
 .dishes_price-tiramisu{
   @media screen and (min-width: 320px){
-    margin-left: 10px;
-    margin-left: 10px;
+    margin-left: 8px;
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
@@ -320,7 +320,7 @@ color:map-get($colors, 'primary-title')
 
 .drinks_price{
   @media screen and (min-width: 320px){
-  margin-left: 10px;
+  margin-left: 3px;
       font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
@@ -344,7 +344,7 @@ font-style: normal;
 }
 .drinks_price-espresso{
   @media screen and (min-width: 320px){
-    margin-left: 10px;
+    margin-left: 8px;
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
@@ -370,7 +370,7 @@ font-style: normal;
 }
 .drinks_price-americano{
   @media screen and (min-width: 320px){
-    margin-left: 10px;
+    margin-left: 5px;
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
