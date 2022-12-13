@@ -1,0 +1,65 @@
+<!-- тримісний номер -->
+<section class="triple-room">
+  <div class="container triple-room__wrapper">
+    <p class="triple-room__subtitle">Amet minim mollit non</p>
+    <a href="#" class="triple-room__logo link">Mimiho</a>
+
+    <h2 class="triple-room__title">Трьохмісний номер</h2>
+    <p class="triple-room__text">
+      Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.
+      Velit officia consequat duis enim velit mollit. Exercitation veniam
+      consequat sunt nostrud amet.
+    </p>
+
+    <picture>
+      <source
+        srcset="
+          ./images/triple-room/min-bedroom-mob.jpg    1x,
+          ./images/triple-room/min-bedroom-mob-2x.jpg 2x
+        "
+        type="image/jpeg"
+        media="(max-width: 1023px)"
+      />
+      <source
+        srcset="
+          ./images/triple-room/min-bedroom-tab.jpg    1x,
+          ./images/triple-room/min-bedroom-tab-2x.jpg 2x
+        "
+        type="image/jpeg"
+        media="(min-width: 1024px)"
+      />
+      <source
+        srcset="
+          ./images/triple-room/min-bedroom-des.jpg    1x,
+          ./images/triple-room/min-bedroom-des-2x.jpg 2x
+        "
+        type="image/jpeg"
+        media="(min-width: 1280px)"
+      />
+      <img
+        class="triple-room__img"
+        src="./images/triple-room/min-bedroom-mob-2x.jpg"
+        alt="Фото тримісного номера"
+      />
+    </picture>
+
+    <div class="triple-room__slider-wrapper"></div>
+
+    <ul class="btn-list list">
+      <li class="btn-list__item">
+        <a class="btn btn--color-black btn-list__btn button-link link" href="#">
+          Детальніше
+        </a>
+      </li>
+      <li class="btn-list__item">
+        <button
+          class="btn btn--color-black btn-list__btn js-open-modal"
+          data-modal="3"
+          type="button"
+        >
+          Переглянути ціни
+        </button>
+      </li>
+    </ul>
+  </div>
+</section>
