@@ -24,7 +24,7 @@
   width: 100%;
   min-height: 780px;
   border-radius: 2px;
-  padding: 60px 16px;
+  padding: 60px 15px;
   @include mobile {
     width: 414px;
   }
@@ -62,6 +62,7 @@
   font-size: 5vw;
   line-height: 1.16;
   letter-spacing: 0.05em;
+  text-transform: uppercase;
   @include mobile {
     font-size: 24px;
   }
@@ -108,14 +109,14 @@
 }
 .modal-room-input {
   width: 100%;
-  /*width: 98%;*/
   height: 54px;
   border-radius: 2px;
-  color: map-get($colors, 'placeholder');
   padding: 0 12px;
   display: inline-block;
   display: flex;
   background-color: transparent;
+  color: map-get($colors, 'placeholder');
+  font-size: 4vw;
   border: 1px solid map-get($colors, 'second-accent');
   &::placeholder {
     font-family: 'Times New Roman';
@@ -127,6 +128,7 @@
     color: map-get($colors, 'placeholder');
   }
   @include mobile {
+    font-size: 20px;
     &::placeholder {
       font-size: 20px;
     }
@@ -134,6 +136,7 @@
   @include tablet {
     width: 288px;
     height: 64px;
+    font-size: 24px;
     &::placeholder {
       font-size: 24px;
     }
@@ -201,16 +204,17 @@
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 4vw;
   line-height: 1.2;
   color: #ffffff;
+  text-transform: uppercase;
   &:hover,
   &:focus {
     background-color: map-get($colors, 'accent-color');
     color: map-get($colors, 'primary-title');
   }
   @include mobile {
-    min-width: 384px;
+    font-size: 20px;
   }
 }
 .room-wrap-bottom {
