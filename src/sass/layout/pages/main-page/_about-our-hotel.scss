@@ -126,7 +126,7 @@
                     width: 58vw;
                     font-size: 3vw;
                     margin-left: auto;
-                    text-align: end;
+                  
                 }
             }
 
@@ -164,8 +164,9 @@
             @media screen and (max-width: 413px) {
                     & {
                         width: 39vw;
-                        margin-top: 15vh;
+                        margin-top: 10vh;
                         font-size: 3vw;
+                        height: 120px;
                         
                     }
                 }
