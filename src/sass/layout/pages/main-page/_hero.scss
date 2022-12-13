@@ -244,7 +244,7 @@
   &:focus {
     @include tablet {
       background-color: #ffffff;
-      border-color: getColor('accent-color');
+      border-color: transparent;
     }
   }
   &:active {
@@ -255,4 +255,7 @@
   &.link {
     display: inline-block;
   }
+}
+ul {
+  list-style: none;
 }
