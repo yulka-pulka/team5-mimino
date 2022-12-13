@@ -104,7 +104,9 @@
 .triple-room__text {
   @media screen and (max-width: 413px) {
     font-size: 2.9vw;
+    text-align: end;
   }
+
   margin-left: calc(100% - 280px);
   margin-bottom: 32px;
   font-family: 'Montserrat';
