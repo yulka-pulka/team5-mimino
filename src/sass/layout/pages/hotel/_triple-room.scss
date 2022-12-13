@@ -1,53 +1,31 @@
 .triple-room {
-  margin: 0 auto;
-  max-width: $desktop;
   background-color: getColor('secondary-bg');
-  overflow-x: clip;
 }
 
 .triple-room__wrapper {
+  position: relative;
   margin: 0 auto;
   max-width: $mobile;
-
-  @include tablet {
-    max-width: $tablet;
-  }
-
-  @include desktop {
-    max-width: $desktop;
-  }
-}
-
-.triple-room__container {
-  position: relative;
-  padding-left: 15px;
-  padding-right: 15px;
   padding-top: 32px;
   padding-bottom: 32px;
 
-  @include mobile {
-    max-width: $mobile;
-  }
-
   @include tablet {
     max-width: $tablet;
-    padding-left: 47px;
-    padding-right: 47px;
-    padding-top: 62px;
-    padding-bottom: 145px;
+    padding-top: 66px;
+    padding-bottom: 159px;
   }
 
   @include desktop {
     max-width: $desktop;
-    padding-left: 85px;
-    padding-right: 85px;
     padding-top: 72px;
-
     padding-bottom: 182px;
   }
 }
 
 .triple-room__subtitle {
+  @media screen and (max-width: 413px) {
+    font-size: 4.8vw;
+  }
   margin-bottom: 8px;
   padding-right: 10px;
   text-align: right;
@@ -68,6 +46,9 @@
 }
 
 .triple-room__logo {
+  @media screen and (max-width: 413px) {
+    font-size: 9.6vw;
+  }
   display: block;
   margin-bottom: 32px;
   text-align: end;
@@ -92,6 +73,9 @@
 }
 
 .triple-room__title {
+  @media screen and (max-width: 413px) {
+    font-size: 5.7vw;
+  }
   text-align: end;
   margin-bottom: 12px;
   font-family: 'Times New Roman';
@@ -103,18 +87,21 @@
     font-size: 30px;
     line-height: calc(34 / 30);
     margin-bottom: 16px;
-    padding-right: 43px;
+    padding-right: 54px;
   }
 
   @include desktop() {
     font-size: 36px;
     line-height: calc(41 / 36);
     margin-bottom: 24px;
-    padding-right: 57px;
+    padding-right: 75px;
   }
 }
 
 .triple-room__text {
+  @media screen and (max-width: 413px) {
+    font-size: 2.9vw;
+  }
   margin-left: calc(100% - 280px);
   margin-bottom: 32px;
   font-family: 'Montserrat';
@@ -139,8 +126,6 @@
 }
 
 .triple-room__img {
-  display: block;
-  width: 244px;
   margin-bottom: 298px;
   background: getColor('secondary-bg');
   box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
@@ -174,23 +159,7 @@
 }
 
 .btn-list__btn {
-  background-color: getColor('primary-title');
-  color: getColor('accent-color');
-  width: 236px;
   padding: 14px 0;
-  border: 2px solid getColor('accent-color');
-  border-radius: 25px;
-  font-family: inherit;
-  @include font(16, 20, 700, 0.02em);
-  cursor: pointer;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.btn-list__btn:hover,
-.btn-list__btn:focus {
-  background-color: getColor('white-text');
-  border-color: getColor('accent-color');
 }
 
 .button-link {
