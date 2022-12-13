@@ -14,7 +14,7 @@
   opacity: 0;
   visibility: hidden;
   background-color: map-get($colors, 'primary-bg');
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -22,7 +22,6 @@
 }
 .modal-room {
   width: 100%;
-  min-height: 780px;
   border-radius: 2px;
   padding: 60px 15px;
   @include mobile {
@@ -30,7 +29,7 @@
   }
   @include tablet {
     width: 712px;
-    min-height: 638px;
+    height: 638px;
     padding: 60px;
   }
 }
@@ -41,11 +40,7 @@
   position: absolute;
   right: 15px;
   top: 15px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+  @include flex-center;
   padding: 0;
   border: none;
 }
@@ -58,14 +53,13 @@
   font-style: normal;
   text-align: center;
   color: map-get($colors, 'primary-title');
-  font-weight: 700;
-  font-size: 5vw;
-  line-height: 1.16;
-  letter-spacing: 0.05em;
   text-transform: uppercase;
-  @include mobile {
-    font-size: 24px;
+
+  @include font(24px, 28px, 700, 0.05em);
+  @media screen and (max-width: 413px) {
+    font-size: 5vw;
   }
+
   @include tablet {
     font-size: 40px;
     line-height: 1.15;
@@ -74,18 +68,22 @@
 }
 
 .room-intut-wrap {
+  @include flex-column;
+
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 20px;
+    gap: 20px;
+  }
   @include tablet {
-    display: flex;
+    flex-direction: row;
     gap: 16px;
     margin-bottom: 28px;
   }
 }
 .room-label-wrap {
   position: relative;
-  @media screen and (max-width: 1023px) {
-    margin-bottom: 20px;
-  }
 }
+
 .room-label {
   @include flex-column;
 }
@@ -101,10 +99,13 @@
   height: 24px;
 }
 .room-select-wpap {
+  margin-bottom: 40px;
+  @include flex-column;
+  gap: 20px;
   @include tablet {
     display: flex;
+    flex-direction: row;
     gap: 16px;
-    margin-bottom: 40px;
   }
 }
 .modal-room-input {
@@ -116,21 +117,21 @@
   display: flex;
   background-color: transparent;
   color: map-get($colors, 'placeholder');
-  font-size: 4vw;
+  font-size: 20px;
   border: 1px solid map-get($colors, 'second-accent');
   &::placeholder {
     font-family: 'Times New Roman';
     font-style: normal;
-    font-weight: 700;
-    font-size: 4vw;
-    line-height: 23px;
-    letter-spacing: 0.05em;
     color: map-get($colors, 'placeholder');
+    @include font(20px, 23px, 700, 0.05em);
   }
-  @include mobile {
-    font-size: 20px;
+  &:focus {
+    border: 1px solid map-get($colors, 'accent-color');
+  }
+  @media screen and (max-width: 413px) {
+    font-size: 4vw;
     &::placeholder {
-      font-size: 20px;
+      font-size: 4vw;
     }
   }
   @include tablet {
@@ -147,14 +148,12 @@
   margin-top: 8px;
   font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
   color: map-get($colors, 'second-accent');
   padding-left: 12px;
+  @include font(14px, 17px, 500, 0.02em);
   @include tablet {
     font-size: 16px;
+    line-height: 20px;
   }
 }
 .room-select {
@@ -163,17 +162,15 @@
   padding: 0 12px;
   font-family: 'Times New Roman';
   font-style: normal;
-  font-weight: 700;
-  font-size: 4vw;
-  line-height: 23px;
-  letter-spacing: 0.05em;
   color: map-get($colors, 'placeholder');
   background-color: transparent;
   border: 1px solid map-get($colors, 'second-accent');
   appearance: none;
   z-index: 2;
-  @include mobile {
-    font-size: 20px;
+  @include font(20px, 23px, 700, 0.05em);
+
+  @media screen and (max-width: 413px) {
+    font-size: 4vw;
   }
   @include tablet {
     width: 288px;
@@ -183,9 +180,11 @@
 }
 
 .room-wrap-right {
+  @media screen and (max-width: 1023px) {
+    margin-bottom: 20px;
+  }
   @include tablet {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     margin-left: 304px;
     margin-bottom: 28px;
   }
@@ -217,11 +216,7 @@
     font-size: 20px;
   }
 }
-.room-wrap-bottom {
-  @media screen and (max-width: 1023px) {
-    margin-bottom: 40px;
-  }
-}
+
 .modal-room.is-show {
   display: block;
 }
