@@ -18,13 +18,10 @@ width: 421px;
     border: none;
   }
  
-  .menu_container{
+  
+  .menu{
     max-width: 1280px;
     background-color:map-get($colors, 'secondary-bg');
-    
-  }
-  .menu_container{
-    
     @media screen and (min-width: 320px){
       padding-top: 16px;padding-bottom: 16px;
      }
@@ -34,7 +31,7 @@ width: 421px;
     @media screen and (min-width: $tablet){
       padding-top: 58px;padding-bottom: 40px;}
     @media screen and (min-width: $desktop){
-   padding-top: 58px;padding-bottom: 40px;}
+   padding-top: 58px;padding-bottom: 60px;}
   }
   
   .menu_wrap{
