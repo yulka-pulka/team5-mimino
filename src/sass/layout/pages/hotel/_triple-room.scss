@@ -2,6 +2,12 @@
   max-width: 1280px;
   margin: 0 auto;
   background-color: getColor('secondary-bg');
+  .btn-list {
+    margin-top: 20px;
+    @include tablet {
+      margin-top: 0;
+    }
+  }
 }
 
 .triple-room__wrapper {
@@ -14,13 +20,13 @@
   @include tablet {
     max-width: $tablet;
     padding-top: 66px;
-    padding-bottom: 159px;
+    padding-bottom: 40px;
   }
 
   @include desktop {
     max-width: $desktop;
     padding-top: 72px;
-    padding-bottom: 182px;
+    padding-bottom: 50px;
   }
 }
 
@@ -115,14 +121,14 @@
   margin-bottom: 32px;
   font-family: 'Montserrat';
   @include font(12, 15, 600, 0.02em);
-  width: 242px;
+  width: 194px;
   color: #5f5f5f;
 
   @include tablet {
     font-weight: 700;
     font-size: 16px;
     line-height: calc(20 / 16);
-    margin-bottom: 210px;
+    margin-bottom: 174px;
     width: 420px;
     margin-left: calc(100% - 392px);
     padding-right: 20px;
@@ -195,5 +201,14 @@
     top: 590px;
     left: 647px;
     width: 548px;
+  }
+}
+.wraper-box {
+  display: flex;
+  flex-direction: column;
+  @include tablet {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
   }
 }
