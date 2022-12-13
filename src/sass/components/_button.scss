@@ -19,12 +19,7 @@
   &:focus {
     @include tablet {
       background-color: #ffffff;
-      border: none;
-    }
-  }
-  &:active {
-    @include tablet {
-      border-color: #ffffff;
+      border-color: transparent;
     }
   }
 }
@@ -37,9 +32,10 @@
       border: 2px solid getColor('accent-color');
     }
   }
-  &:active {
-    @include tablet {
-      border: 2px solid getColor('accent-color');
-    }
+  &.link {
+    display: inline-block;
   }
+}
+ul {
+  list-style: none;
 }

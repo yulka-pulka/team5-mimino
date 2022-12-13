@@ -1,21 +1,30 @@
 // import Swiper JS
-import Swiper from 'swiper';
+import Swiper, { Navigation, Autoplay } from 'swiper';
 // import Swiper styles
 import 'swiper/swiper.scss';
 
+
 const swiper = new Swiper(".mini-slider-1", {
-        speed: 2500,
+  modules: [Navigation, Autoplay],
+        speed: 3500,
         slidesPerView: 2,
         spaceBetween: 20,
         loop: true,
         autoplay: {
           delay: 2500,
+          reverseDirection: true,
           disableOnInteraction: false,
         },
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
+          nextEl: ".swiper-button__next",
+          prevEl: ".swiper-button__prev",
+  },
+  breakpoints: {
+
+    1024: {
+      spaceBetween: 40,
+    },
+  },
       });
     
 
