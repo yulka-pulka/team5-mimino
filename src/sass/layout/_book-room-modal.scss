@@ -17,7 +17,7 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scaleY(0);
   z-index: 30;
 }
 .modal-room {
@@ -119,6 +119,7 @@
   color: map-get($colors, 'placeholder');
   font-size: 20px;
   border: 1px solid map-get($colors, 'second-accent');
+  outline: transparent;
   &::placeholder {
     font-family: 'Times New Roman';
     font-style: normal;
@@ -167,6 +168,10 @@
   border: 1px solid map-get($colors, 'second-accent');
   appearance: none;
   z-index: 2;
+  outline: transparent;
+  &:focus {
+    border: 1px solid map-get($colors, 'accent-color');
+  }
   @include font(20px, 23px, 700, 0.05em);
 
   @media screen and (max-width: 413px) {
@@ -224,4 +229,8 @@
 .overlay.active {
   opacity: 1;
   visibility: visible;
+}
+.modal.active {
+  transform: translate(-50%, -50%) scaleY(1);
+  transition: transform 300ms linear;
 }
