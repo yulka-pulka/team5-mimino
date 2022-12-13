@@ -1,0 +1,45 @@
+.slider-box {
+  width: 330px;
+  overflow: hidden;
+  @include tablet {
+    max-width: 100%;
+    overflow: inherit;
+  }
+}
+.swiper.mini-slider-1 {
+  margin-left: -180px;
+  @include tablet {
+    margin-left: auto;
+  }
+}
+.mini-slider-1 {
+  width: 510px;
+  height: auto;
+
+  @include tablet {
+    width: 428px;
+  }
+  @include desktop {
+    width: 530px;
+  }
+}
+.swiper-button {
+  &__wraper {
+    display: flex;
+    margin-top: 20px;
+  }
+  &__prev {
+    margin-right: 32px;
+  }
+  &__prev,
+  &__next {
+    display: flex;
+    cursor: pointer;
+  }
+  &__icon {
+    @include box(32px);
+  }
+}
+.u-right {
+  justify-content: flex-end;
+}
