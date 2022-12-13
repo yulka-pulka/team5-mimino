@@ -37,7 +37,8 @@
         @media screen and (max-width: 413px) {
                 & {
                    margin-left: auto;
-                  text-align: end;
+                 text-align: end;
+                    font-size: 5vw;
                    
         
                 }
@@ -79,6 +80,7 @@
                     margin-left: auto;
                    text-align: end;
                    width: 127px;
+                font-size: 10vw;
                    
         
                 }
@@ -122,6 +124,7 @@
         @media screen and (max-width: 413px) {
                 & {
                     width: 58vw;
+                    font-size: 3vw;
                     margin-left: auto;
                     text-align: end;
                 }
@@ -161,7 +164,8 @@
             @media screen and (max-width: 413px) {
                     & {
                         width: 39vw;
-                        margin-top: 5vh;
+                        margin-top: 15vh;
+                        font-size: 3vw;
                         
                     }
                 }
@@ -228,6 +232,7 @@
         @media screen and (max-width: 413px) {
                 & {
                     width: 48vw;
+                    margin-left: 3vw;
                 }
             }
 
