@@ -21,6 +21,7 @@ width: 421px;
   
   .menu{
     max-width: 1280px;
+    margin: 0 auto;
     background-color:map-get($colors, 'secondary-bg');
     @media screen and (min-width: 320px){
       padding-top: 16px;padding-bottom: 16px;
@@ -34,15 +35,16 @@ width: 421px;
    padding-top: 58px;padding-bottom: 60px;}
   }
   
+  
   .menu_wrap{
   
     @media screen and (min-width: $tablet){
       display: flex;
-      justify-content: center;
+      
     }
     @media screen and (min-width: $desktop){
     display: flex;
-    justify-content: center;
+   
   }}
 
   .menu_left{
