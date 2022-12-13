@@ -1,22 +1,53 @@
 .double-luxe{
-    padding-top: 32px;
-    padding-bottom: 32px;
-    @media screen and (min-width: 1024px){
-        padding-top: 64px;
-        padding-bottom: 104px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+    .double-luxe__wrapper {
         position: relative;
         margin: 0 auto;
-        width: 1024px;
+        max-width: $mobile;
+        padding-top: 32px;
+        padding-bottom: 32px;
       
+        @include tablet {
+          max-width: $tablet;
+          padding-top: 66px;
+          padding-bottom: 159px;
+        }
+      
+        @include desktop {
+          max-width: $desktop;
+          padding-top: 72px;
+          padding-bottom: 182px;
+        }
+      }
+.hotel__item-titel{
+    color: #B4B4B4;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.15;
+    @media screen and (max-width: 413px){
+        font-size: 5vw;
+        margin-bottom: 4px;
     }
-    @media screen and (min-width: 1280px){
-        padding-top: 72px;
-        padding-bottom: 112px;
-        width: 1028px;
+    @media screen and (min-width: 414px){
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    @media screen and (min-width: 1024px){
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 4px;
     }
 }
 .logo-page {
+
     font-family: 'Film P3', sans-serif;
+    @media screen and (max-width: 413px){
+     width: 30vw;
+     height: 43px;
+    }
     @include font(40, 69, 700, 0.3em);
     color: #494848;
     text-transform: uppercase;
@@ -29,40 +60,16 @@
     @include desktop {
         margin-bottom: 72px;
       }
-  }
-.hotel__title{
-    @media screen and (min-width: 320px){
-        font-family: 'Film P3';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 10vw;
-        line-height: 1.1;
-        margin-bottom: 22px;
-        color: #494848;
-    }
-    @media screen and (min-width: 414px){
-        font-size: 40px;
-        letter-spacing: 0.3em;
-        margin-bottom: 32px;
-    }
-    @media screen and (min-width: 1024px){
-        font-size: 64px;
-        line-height: 1.1;
-        margin-bottom: 62px;
-    }
-    @media screen and (min-width: 1280px){
-        margin-bottom: 72px;
-    }
 
-}
-.hotel__luxe{
-    @media screen and (min-width: 320px){
-        font-family: 'Times New Roman';
-        font-style: normal;
-        font-weight: 700;
+  }
+  .hotel__room{
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000000;
+    @media screen and (max-width: 413px){
         font-size: 6vw;
-        line-height: 1.2;
-        color: #000000;
     }
     @media screen and (min-width: 414px){
         font-size: 24px;
@@ -77,14 +84,15 @@
     }
 }
 .hotel__about{
-    @media screen and (min-width: 320px){
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 600;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 10px;
+    color: #7A7A7A;
+    @media screen and (max-width: 413px){
         font-size: 3vw;
-        line-height: 1.25;
-        margin-top: 10px;
-        color: #7A7A7A; 
+        width: 62vw;
     }
     @media screen and (min-width: 414px){
         font-size: 12px;
@@ -104,10 +112,9 @@
     }
 }
 .images{
-    @media screen and (min-width: 320px){
-        width: 194px;
-        height: 272px;
-        margin-left: 90px;
+    @media screen and (max-width: 413px){
+        width: 59vw;
+        margin-left: 32vw;
     }
     
     @media screen and (min-width: 414px){
@@ -131,12 +138,12 @@
     @media screen and (min-width: 1280px){
         width: 460px;
         height: 574px;
-        right: 250px;
+        right: 180px;
        
     }
 
     &-list{
-        @media screen and (min-width: 320px){
+        @media screen and (max-width: 413px){
             width: 404px;
             display: flex;
             gap: 16px;
@@ -164,10 +171,10 @@
 }
 
 .slider{
-    @media screen and (min-width: 320px){
+    @media screen and (max-width: 413px){
         width: 304px;
         height: 194px;
-        background-color: #494848;
+
     }
     @media screen and (min-width: 414px){
         width: 404px;
@@ -212,29 +219,27 @@
     text-decoration: none;
     border: none;
 }
-.hotel__btn{
-    width: 236px;
-    height: 48px;
-    margin-bottom: 16px;
-    background: #000000;
-    border: none;
-    border: 2px solid #FFFFFF;
-    border-radius: 25px;
-    font-family: 'Montserrat';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1.25;
-    letter-spacing: 0.02em;
-    color: #F3C653;
-    cursor: pointer;
+.btn-list {
     text-align: center;
-}
-.hotel__btn-titel :hover, 
-.hotel__btn-titel :focus{
-    background: #FFFFFF;
-    border: 2px solid #F3C653;
-}
+  
+    @include tablet {
+      text-align: left;
+    }
+  }
+  
+  .btn-list__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  
+  .btn-list__btn {
+    padding: 14px 0;
+  }
+  
+  .button-link {
+    display: inline-block;
+    text-align: center;
+  }
+
 
 .btn-list {
     @media screen and (min-width: 320px){
@@ -272,4 +277,3 @@
         margin-top: 188px;
     }
 }
-
