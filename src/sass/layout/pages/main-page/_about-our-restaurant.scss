@@ -1,0 +1,205 @@
+.about-restaurant {
+    padding-top: 16px;
+    background-color: #FFFDEE;
+}
+
+.about {
+
+    justify-content: center;
+    z-index: 0;
+
+
+    @media screen and (min-width: 1024px) {
+        & {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+
+
+
+    &__header {
+        font-family: 'TimesNewRoman',
+            'sans-serif';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.15;
+        color: #B4B4B4;
+
+    
+
+
+
+        @media screen and (min-width: 1024px) {
+            & {
+                font-size: 32px;
+                line-height: 1.15;
+                margin-top: 104px;
+
+            }
+        }
+
+
+    }
+
+    &__logo {
+        font-family: 'Film P3',
+            'sans-serif';
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.07;
+        letter-spacing: 0.3em;
+        color: #494848;
+        margin-top: 12px;
+
+       
+
+
+        @media screen and (min-width: 1024px) {
+            & {
+                font-size: 64px;
+                margin-top: 4px;
+
+            }
+        }
+
+
+    }
+
+
+    &__title {
+
+        font-family: 'Montserrat',
+            'sans-serif';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 1.25;
+        letter-spacing: 0.02em;
+        color: #5F5F5F;
+        max-width: 258px;
+        margin-top: 12px;
+
+        @media screen and (max-width: 413px) {
+                & {
+                    width: 62vw;
+                }
+            }
+
+        @media screen and (min-width: 1024px) {
+            & {
+                font-size: 16px;
+                max-width: 439px;
+                margin-top: 24px;
+
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            & {
+                max-width: 518px;
+            }
+        }
+
+
+        &--gold {
+            font-family: 'Montserrat',
+                'sans-serif';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1.25;
+            letter-spacing: 0.02em;
+            color: #C79002;
+            max-width: 163px;
+            margin-left: 20px;
+            margin-top: 102px;
+
+            @media screen and (max-width: 413px) {
+                    & {
+                       
+                        width: 39vw;
+                        margin-top: 5vh;
+                    }
+                }
+
+            @media screen and (min-width: 1024px) {
+                & {
+                    font-size: 16px;
+                    max-width: 312px;
+                    margin-top: 164px;
+                    margin-left: 48px;
+
+                }
+            }
+
+            @media screen and (min-width: 1280px) {
+                & {
+                    margin-top: 121px;
+                    margin-left: 32px;
+                }
+            }
+        }
+    }
+
+}
+
+
+.about__image {
+    margin-top: 28px;
+    margin-left: 140px;
+    box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+
+    @media screen and (max-width: 413px) {
+            & {
+                width: 59vw;
+                margin-left:34vw ;
+            }
+        }
+
+    @media screen and (min-width: 1024px) {
+        & {
+            z-index: 1;
+
+            margin-left: 465px;
+            margin-top: -366px;
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        & {
+            margin-left: 555px;
+            margin-top: -346px;
+        }
+    }
+
+
+    &--second {
+        margin-top: 32px;
+        box-shadow: 2px 2px 60px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+
+        @media screen and (max-width: 413px) {
+                & {
+                    width: 48vw;
+                }
+            }
+
+        @media screen and (min-width: 1024px) {
+            & {
+                margin-top: -16px;
+            }
+        }
+
+        @media screen and (min-width: 1280px) {
+            & {
+                margin-top: -65px;
+            }
+        }
+    }
+}
+
+.thumb {
+    display: flex;
+}
