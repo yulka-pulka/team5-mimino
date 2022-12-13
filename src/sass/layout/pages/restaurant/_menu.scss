@@ -1,5 +1,6 @@
 
 table {
+
   @media screen and (min-width: $tablet){
 width: 421px;
   }
@@ -17,9 +18,21 @@ width: 421px;
     border: none;
   }
  
-  .menu{background-color:map-get($colors, 'secondary-bg')
-
+  .menu_container{
+    max-width: 1280px;
+    background-color:map-get($colors, 'secondary-bg')
   }
+  .menu_container{
+    @media screen and (min-width: 320px){
+      padding-top: 16px;padding-bottom: 16px;
+     }
+    @media screen and (min-width: $mobile){
+     padding-top: 32px;padding-bottom: 32px;
+    }
+    @media screen and (min-width: $desktop){
+   padding-top: 58px;padding-bottom: 40px;
+  }}
+  
   .menu_wrap{
     @media screen and (min-width: $tablet){
       display: flex;
@@ -28,7 +41,8 @@ width: 421px;
     display: flex;
   }}
 
-  .menu_left{@media screen and (min-width: $tablet){
+  .menu_left{
+    @media screen and (min-width: $tablet){
     margin-right: 88px;
   }
       @media screen and (min-width: $desktop) {
@@ -50,8 +64,8 @@ width: 421px;
   }
   .drinks_wrap{
     @media screen and (min-width: 320px){
-      width: 200px;
-      padding-bottom: 5px;
+      width: 240px;
+      // padding-bottom: 5px;
     }
     @media screen and (min-width: $mobile){
      width: 220px;
@@ -68,8 +82,8 @@ width: 421px;
  
   .dessert_wrap{
     @media screen and (min-width: 320px){
-      width: 200px;
-      padding-bottom: 5px;
+      width: 240px;
+      // padding-bottom: 5px;
     }
     @media screen and (min-width: $mobile){
      width: 220px;
@@ -92,17 +106,14 @@ width: 421px;
 font-style: normal;
 font-weight: 700;
 font-size: 7vw;
-padding-top: 10px;
-padding-bottom: 10px;
+margin-bottom: 10px;
     }
     @media screen and (min-width: $mobile){
       @include font(32px, 37px, 700, 0.02em);
-      padding-top: 32px;
-      padding-bottom: 16px;
+      margin-bottom: 16px;
     }
     @media screen and (min-width: $tablet){
-      padding-top: 58px;
-      padding-bottom: 40px;
+      margin-bottom: 40px;
     }
 
      @include font(32px, 37px, 700, 0.02em);
@@ -117,25 +128,50 @@ padding-bottom: 10px;
     font-family: 'Times New Roman';
 font-style: normal;
 font-weight: 700;
-font-size: 6vw;
-padding-top: 10px;padding-bottom: 10px;}
-    @media screen and (min-width: $mobile){
-      padding-bottom: 10px;
-      padding-top: 10px;
-    }
+font-size: 4vw;
+margin-bottom: 10px;
+margin-top: 10px;}
     @media screen and (min-width: $mobile){
       @include font(20px, 23px, 700, 0.02em);
-      padding-top: 16px;
-      padding-bottom: 16px;
+     margin-bottom: 16px;
+     margin-top: 16px;
     }
     @media screen and (min-width: $tablet){
-      padding-top: 20px;
-      padding-bottom: 20px;
+      margin-bottom: 20px;
+      margin-top: 20px;
     }
     @media screen and (min-width: $desktop){
    @include font(24px, 28px, 700, 0.02em);
-      padding-bottom: 20px;
-      padding-top: 20px;}
+     margin-bottom: 20px;
+    margin-top: 20px;}
+      text-align: left;
+      font-family: 'Times New Roman';
+      font-style: normal;
+    
+    color:map-get($colors, 'primary-title')
+  }
+  .dishes_titl-hot,
+  .dishes_title-salad{ 
+    @media screen and (min-width: 320px){
+    font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+font-size: 4vw;
+margin-bottom: 10px;
+margin-top: 10px;
+  }
+    @media screen and (min-width: $mobile){
+      @include font(20px, 23px, 700, 0.02em);
+     margin-bottom: 16px;
+     margin-top: 16px;
+    }
+    @media screen and (min-width: $tablet){
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+    @media screen and (min-width: $desktop){
+   @include font(24px, 28px, 700, 0.02em);
+     margin-bottom: 20px;}
       text-align: left;
       font-family: 'Times New Roman';
       font-style: normal;
@@ -146,7 +182,7 @@ padding-top: 10px;padding-bottom: 10px;}
     @media screen and (min-width: 320px){
       font-family: 'Montserrat';
     font-style: normal;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 500;
     }
     @media screen and (min-width: $mobile){
@@ -165,7 +201,7 @@ padding-top: 10px;padding-bottom: 10px;}
     @media screen and (min-width: 320px){
       font-family: 'Montserrat';
     font-style: normal;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 500;
     }
     @media screen and (min-width: $mobile){
@@ -179,7 +215,13 @@ padding-top: 10px;padding-bottom: 10px;}
     color:map-get($colors, 'primary-title')
   }
   .dishes_ingredients{
+    @media screen and (min-width: 320px){
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 2vw;
+    font-weight: 400;}
     @media screen and (min-width: $mobile){
+      @include font(10px, 12px, 400, 0.02em);
       width: 221px;
     }
     @media screen and (min-width: $desktop){
@@ -194,10 +236,10 @@ padding-top: 10px;padding-bottom: 10px;}
   }
   .dishes_weight{
     @media screen and (min-width: 320px){
-   width: 100px;
+  width: 40%;
    padding-left: 10px;
       font-size: 3vw;
-    font-weight: 500;
+    font-weight: 300;
       font-family: 'Montserrat';
     font-style: normal;   
     }
@@ -357,54 +399,26 @@ font-style: normal;
   padding-bottom: 0;
 }
 
-
-.btn {
+.button_menu{
   @media screen and (min-width: $mobile){
         justify-content: center;
-        border: none; 
       }
       @media screen and (min-width: $tablet){
-        text-align: center;
         margin-left: auto;
-        border: none; 
-      }
-      @media screen and (min-width: $desktop){
-        border:2px solid #FFFDEE;
-      }
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.25;
-  letter-spacing: 0.02em;
-  color: getColor('accent-color');
-  min-width: 236px;
-  padding: 12px 22px;
-  background: map-get($colors, 'primary-title');
-  border-radius: 25px;
-  cursor: pointer;
-  @media screen and (min-width: $tablet){
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &:hover,
-  &:focus {
-    @media screen and (min-width: $tablet) {
-      background-color: #ffffff;
-      border: none;
-    }
-  }
-  
+      }    
 }
+
 .button_wrap{
   display: flex;
   justify-content: center;
   @media screen and (min-width: $mobile){
-    padding-top: 32px;
-   padding-bottom: 32px;
+    margin-top: 32px;
   }
   @media screen and (min-width: $mobile){
-    padding-top: 40px;
-    padding-bottom: 40px;}
+    margin-top: 40px;
+    }
   @media screen and (min-width: $desktop){
   justify-content: flex-end;
-  padding-top: 31px;
-   padding-bottom: 60px;}
+  margin-top: 31px;
+  }
 }
