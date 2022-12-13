@@ -5,11 +5,13 @@
         padding-top: 64px;
         padding-bottom: 104px;
         position: relative;
-        margin-right: 0;
+        margin: auto;
+        width: 1024px;
     }
     @media screen and (min-width: 1280px){
         padding-top: 72px;
         padding-bottom: 112px;
+        width: 1280px;
     }
     
 }
