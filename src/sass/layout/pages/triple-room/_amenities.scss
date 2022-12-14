@@ -111,10 +111,10 @@
   @include tablet {
     margin-left: auto;
     min-width: 434px;
+    margin-bottom: 32px;
   }
   @include desktop {
     margin-right: 113px;
-    margin-bottom: 32px;
   }
 }
 .amenities-link {
