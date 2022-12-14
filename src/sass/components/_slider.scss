@@ -1,9 +1,33 @@
 .slider-box {
   width: 330px;
   overflow: hidden;
+  margin-top: 32px;
+  margin-left: -15px;
+
+  @media screen and (max-width: 413px) {
+    width: 80vw;
+  }
   @include tablet {
-    max-width: 100%;
+    width: 428px;
     overflow: inherit;
+    margin-top: -28px;
+    margin-left: 0;
+  }
+  @include desktop {
+    width: 530px;
+    margin-top: -147px;
+  }
+  &.u-m-right {
+    margin-right: -15px;
+    @include tablet {
+      margin-right: 0;
+    }
+  }
+}
+.swiper {
+  &__img {
+    background: #dadada;
+    border-radius: 2px;
   }
 }
 .swiper.mini-slider-1 {
@@ -11,18 +35,40 @@
   @include tablet {
     margin-left: auto;
   }
+  .swiper-button {
+    &__wraper {
+      margin-left: 195px;
+      @include tablet {
+        margin-left: 0;
+      }
+    }
+  }
 }
-.mini-slider-1 {
-  width: 510px;
-  height: auto;
-
+.swiper.mini-slider-r {
+  margin-right: -180px;
   @include tablet {
-    width: 428px;
+    margin-right: auto;
   }
-  @include desktop {
-    width: 530px;
+  .swiper-button {
+    &__wraper {
+      margin-right: 195px;
+      @include tablet {
+        margin-right: 0;
+      }
+    }
   }
 }
+// .mini-slider-1 {
+//   width: 530px;
+//   height: auto;
+
+//   @include tablet {
+//     width: 428px;
+//   }
+//   @include desktop {
+//     width: 530px;
+//   }
+// }
 .swiper-button {
   &__wraper {
     display: flex;
@@ -35,11 +81,34 @@
   &__next {
     display: flex;
     cursor: pointer;
+    @include tablet {
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:hover {
+        fill: getColor('accent-color');
+      }
+    }
   }
   &__icon {
     @include box(32px);
+    @media screen and (max-width: 413px) {
+      width: 8vw;
+    }
   }
 }
 .u-right {
   justify-content: flex-end;
+}
+.u-m-right {
+  margin-left: auto;
+}
+
+//--------triple room
+.triple-room {
+  .slider-box {
+    order: inherit;
+    margin-top: 0;
+    @include tablet {
+      order: 1;
+    }
+  }
 }
