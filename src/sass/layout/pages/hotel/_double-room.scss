@@ -17,7 +17,7 @@
       padding-bottom: 182px;
     }
   }
-  
+
       .hotel__item-titel{
         color: #B4B4B4;
         font-family: 'Times New Roman';
@@ -38,20 +38,18 @@
             margin-bottom: 4px;
         }
     }
-    .logo-page {
-        font-family: 'Film P3', sans-serif;
+    .logo-room {
         @media screen and (max-width: 413px){
          width: 30vw;
          height: 43px;
         }
-        @include font(40, 69, 700, 0.3em);
+        @media screen and (min-width: 414px){
         color: #494848;
-        text-transform: uppercase;
         margin-bottom: 32px;
+        }
         @include tablet {
           margin-bottom: 62px;
-          font-size: 64px;
-          line-height: 1.08;
+
         }
         @include desktop {
             margin-bottom: 72px;
@@ -210,21 +208,16 @@
    fill: #F3C653;
 }
 }
-  .btn-list__item:not(:last-child) {
+  .action {
     margin-bottom: 16px;
   }
-  
-  .btn-list__btn {
+
+.curetn {
     padding: 14px 0;
-  }
-  .button-link {
-    display: inline-block;
-    text-align: center;
-  }
-.btn-list {
     @media screen and (max-width: 413px){
         align-items: center;
         justify-content: center;
+        text-align: center;
         padding-top: 62px; 
     }
     @media screen and (min-width: 414px){
