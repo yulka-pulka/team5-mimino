@@ -1,4 +1,10 @@
 .header {
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
   position: fixed;
   width: 100%;
 
@@ -15,12 +21,6 @@
 }
 
 .header.active {
-  @media screen and (min-width: 1280px) {
-    max-width: 1280px;
-    top: 0%;
-    left: 50%;
-    transform: translate(-50%, 0);
-  }
 }
 
 .header.active:after {
