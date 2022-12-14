@@ -1,5 +1,7 @@
 .header {
-  position: absolute;
+  position: fixed;
+  width: 100%;
+
   width: 100%;
   padding-top: 16px;
   padding-bottom: 9px;
@@ -10,6 +12,32 @@
     padding-bottom: 30px;
     height: 100px;
   }
+}
+
+.header.active {
+  @media screen and (min-width: 1280px) {
+    max-width: 1280px;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+
+.header.active:after {
+  transform: translateY(0);
+}
+
+.header:after {
+  background-color: #0e0c07;
+  content: '';
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: translateY(-100%);
+  transition: transform 0.8s ease;
+  width: 100%;
+  z-index: -1;
 }
 
 .header-container {

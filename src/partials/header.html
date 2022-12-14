@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="header">
   <div class="container header-container">
     <nav class="header-navigation">
       <a class="header-logo link" href="./index.html">MIMIHO</a>
@@ -85,3 +85,30 @@
     </div>
   </div>
 </header>
+<!-- <script>
+  console.log(document.querySelector('.header'));
+  const { height: pageHeaderHeight } = document
+    .querySelector('header')
+    .getBoundingClientRect();
+
+  document.body.style.paddingTop = '${pageHeaderHeight}px';
+</script> -->
+<script>
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    let scrollPos = 100;
+    let header = document.getElementById('header');
+
+    if (
+      document.body.scrollTop > scrollPos ||
+      document.documentElement.scrollTop > scrollPos
+    ) {
+      header.classList.add('active');
+    } else {
+      header.classList.remove('active');
+    }
+  }
+</script>
