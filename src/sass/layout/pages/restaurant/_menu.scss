@@ -1,0 +1,438 @@
+
+table {
+
+  @media screen and (min-width: $tablet){
+width: 421px;
+  }
+@media screen and (min-width: $desktop){
+  width: 485px}
+  // width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  table, th,
+  td {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+ 
+  
+  .menu{
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color:map-get($colors, 'secondary-bg');
+    @media screen and (min-width: 320px){
+      padding-top: 16px;padding-bottom: 16px;
+     }
+    @media screen and (min-width: $mobile){
+     padding-top: 32px;padding-bottom: 32px;
+    }
+    @media screen and (min-width: $tablet){
+      padding-top: 58px;padding-bottom: 40px;}
+    @media screen and (min-width: $desktop){
+   padding-top: 58px;padding-bottom: 60px;}
+  }
+  
+  
+  .menu_wrap{
+  
+    @media screen and (min-width: $tablet){
+      display: flex;
+      
+    }
+    @media screen and (min-width: $desktop){
+    display: flex;
+   
+  }}
+
+  .menu_left{
+    @media screen and (min-width: $tablet){
+    margin-right: 88px;
+  }
+      @media screen and (min-width: $desktop) {
+    margin-right: 140px;
+  }}
+
+  .dishes_wrap{
+    @media screen and (min-width: $mobile){
+      width: 220px;
+      padding-bottom: 8px;
+    }
+    @media screen and (min-width: $tablet){
+      width: 226px;
+      padding-bottom: 8px;
+    }
+    @media screen and (min-width: $desktop){
+    padding-bottom: 12px;
+    width: 292px;}
+  }
+  .drinks_wrap{
+    @media screen and (min-width: 320px){
+      width: 240px;
+      // padding-bottom: 5px;
+    }
+    @media screen and (min-width: $mobile){
+     width: 220px;
+      // padding-bottom: 11px;
+    }
+    @media screen and (min-width: $tablet){
+      width: 226px;
+      padding-bottom: 11px;
+    }
+    @media screen and (min-width: $desktop){
+      padding-bottom: 12px;
+      width: 290px;}
+  }
+ 
+  .dessert_wrap{
+    @media screen and (min-width: 320px){
+      width: 240px;
+      // padding-bottom: 5px;
+    }
+    @media screen and (min-width: $mobile){
+     width: 220px;
+      // padding-bottom: 11px;
+    }
+    @media screen and (min-width: $tablet){
+      width: 226px;
+      padding-bottom: 11px;
+    }
+    @media screen and (min-width: $desktop){
+      padding-bottom: 12px;
+      width: 290px;}
+  }
+ .prices_wrap{
+   display: block;
+ }
+  .menu_title{
+    @media screen and (min-width: 320px){
+      font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+font-size: 7vw;
+margin-bottom: 10px;
+    }
+    @media screen and (min-width: $mobile){
+      @include font(32px, 37px, 700, 0.02em);
+      margin-bottom: 16px;
+    }
+    @media screen and (min-width: $tablet){
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: $desktop){
+      margin-bottom: 40px;
+    }
+
+     @include font(32px, 37px, 700, 0.02em);
+      font-family: 'Times New Roman';
+      font-style: normal;
+    text-transform: uppercase;
+    color:map-get($colors, 'primary-title')
+  }
+  .dishes_title {
+    @media screen and (min-width: 320px){
+    font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+font-size: 4vw;
+margin-bottom: 10px;
+margin-top: 10px;}
+    @media screen and (min-width: $mobile){
+      @include font(20px, 23px, 700, 0.02em);
+     margin-bottom: 16px;
+     margin-top: 16px;
+    }
+    @media screen and (min-width: $tablet){
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+    @media screen and (min-width: $desktop){
+   @include font(24px, 28px, 700, 0.02em);
+     margin-bottom: 20px;
+    margin-top: 20px;}
+      text-align: left;
+      font-family: 'Times New Roman';
+      font-style: normal;
+    
+    color:map-get($colors, 'primary-title')
+  }
+  .dishes_titl-hot,
+  .dishes_title-salad{ 
+    @media screen and (min-width: 320px){
+    font-family: 'Times New Roman';
+font-style: normal;
+font-weight: 700;
+font-size: 4vw;
+margin-bottom: 10px;
+margin-top: 10px;
+  }
+    @media screen and (min-width: $mobile){
+      @include font(20px, 23px, 700, 0.02em);
+     margin-bottom: 16px;
+     margin-top: 16px;
+    }
+    @media screen and (min-width: $tablet){
+      margin-bottom: 20px;
+      margin-top: 0;
+    }
+    @media screen and (min-width: $desktop){
+   @include font(24px, 28px, 700, 0.02em);
+     margin-bottom: 20px;}
+      text-align: left;
+      font-family: 'Times New Roman';
+      font-style: normal;
+    
+    color:map-get($colors, 'primary-title')
+  }
+  .dishes_name {
+    @media screen and (min-width: 320px){
+      font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 3vw;
+    font-weight: 500;
+    }
+    @media screen and (min-width: $mobile){
+      @include font(14px, 17px, 500, 0.02em);
+    }
+  
+    @media screen and (min-width: $desktop){
+    @include font(16px, 20px, 500, 0.02em);}
+    margin-bottom: 4px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    color:map-get($colors, 'primary-title')
+  }
+  .drinks_name,
+  .dessert_name{
+    @media screen and (min-width: 320px){
+      font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 3vw;
+    font-weight: 500;
+    padding-bottom: 5px;
+    }
+    @media screen and (min-width: $mobile){
+      @include font(14px, 17px, 500, 0.02em) 
+    }
+    @media screen and (min-width: $desktop){
+    @include font(16px, 20px, 500, 0.02em);}
+    font-family: 'Montserrat';
+    font-style: normal;
+    
+    color:map-get($colors, 'primary-title')
+  }
+  .dishes_ingredients{
+    @media screen and (min-width: 320px){
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-size: 2vw;
+    font-weight: 400;}
+    @media screen and (min-width: $mobile){
+      @include font(10px, 12px, 400, 0.02em);
+      width: 221px;
+    }
+    @media screen and (min-width: $desktop){
+      width: 257px;
+    }
+    @include font(10px, 12px, 400, 0.02em);
+    text-align: left;
+    font-family: 'Montserrat';
+    font-style: normal;
+    
+    color:map-get($colors, 'primary-title')
+  }
+  .dishes_weight{
+    @media screen and (min-width: 320px){
+  width: 30%;
+   padding-left: 9px;
+      font-size: 3vw;
+    font-weight: 300;
+      font-family: 'Montserrat';
+    font-style: normal;   
+    }
+    @media screen and (min-width: $mobile)
+    {@include font(14px, 17px, 300, 0.02em);
+      padding-bottom: 20;
+      padding-left: 30px;
+      width: 165px;
+    }
+    @media screen and (min-width: $tablet){
+      padding-bottom: 15px;
+    }
+    @media screen and (min-width: $desktop){
+    padding-bottom: 12px;
+    width: 195px;
+    padding-left: 24px;}
+    @include font(14px, 17px, 300, 0.02em);
+    font-family: 'Montserrat';
+    font-style: normal;    
+  }
+  .dishes_price{
+    @media screen and (min-width: 320px){
+      margin-left: 5px;
+      font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 3vw;
+    }
+    @media screen and (min-width: $mobile){
+      @include font(14px, 17px, 700, 0.02em); 
+      margin-left: 28px;
+    }
+    @media screen and (min-width: $tablet){
+      margin-left: 47px;
+    }
+    @media screen and (min-width: $desktop){
+   
+    margin-left: 60px;
+    @include font(16px, 20px, 700, 0.02em);}
+  font-family: 'Montserrat';
+font-style: normal;
+
+color:map-get($colors, 'primary-title')}
+
+.dishes_price-patatoes,
+.dishes_price-tiramisu{
+  @media screen and (min-width: 320px){
+    margin-left: 8px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 3vw;}
+  @media screen and (min-width: $mobile){
+    @include font(14px, 17px, 700, 0.02em); 
+    margin-left: 35px;
+  }
+  @media screen and (min-width: $tablet){
+    margin-left: 50px;
+  }
+  @media screen and (min-width: $desktop){
+   
+    margin-left: 65px;
+    @include font(16px, 20px, 700, 0.02em);}
+  @include font(16px, 20px, 700, 0.02em);
+  font-family: 'Montserrat';
+font-style: normal;
+color:map-get($colors, 'primary-title')
+}
+
+.drinks_price{
+  @media screen and (min-width: 320px){
+  margin-left: 3px;
+      font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 3vw;}
+  @media screen and (min-width: $mobile){
+    margin-left: 10px;
+  }
+  @media screen and (min-width: $mobile){
+    @include font(14px, 17px, 700, 0.02em); 
+    margin-left: 25px;
+  }
+  @media screen and (min-width: $tablet){
+    margin-left: 35px;
+  }
+  @media screen and (min-width: $desktop){
+  margin-left: 49px;
+  @include font(16px, 20px, 700, 0.02em);}
+
+  font-family: 'Montserrat';
+font-style: normal;
+}
+.drinks_price-espresso{
+  @media screen and (min-width: 320px){
+    margin-left: 8px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 3vw;
+  }
+  @media screen and (min-width: $mobile){
+    margin-left: 10px;
+  }
+  @media screen and (min-width: $mobile){
+    @include font(14px, 17px, 700, 0.02em); 
+    margin-left: 35px;
+  }
+  @media screen and (min-width: $tablet){
+   
+    margin-left: 45px;}
+  @media screen and (min-width: $desktop){
+  // padding-bottom: 12px;
+  margin-left: 58px;
+  @include font(16px, 20px, 700, 0.02em);}
+  font-family: 'Montserrat';
+font-style: normal;
+ 
+}
+.drinks_price-americano{
+  @media screen and (min-width: 320px){
+    margin-left: 5px;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 3vw;
+  }
+  @media screen and (min-width: $mobile){
+    margin-left: 10px;
+    
+  }
+  @media screen and (min-width: $mobile){
+    @include font(14px, 17px, 700, 0.02em); 
+    margin-left: 28px;
+  }
+  @media screen and (min-width: $tablet){
+   
+    margin-left: 40px;}
+  @media screen and (min-width: $desktop){
+  // padding-bottom: 12px;
+  margin-left: 52px;
+  @include font(16px, 20px, 700, 0.02em);}
+  font-family: 'Montserrat';
+font-style: normal;
+}
+.food{
+  @media screen and (min-width: $mobile){
+    padding-bottom: 11px;
+  } 
+  @media screen and (min-width: $tablet){
+    padding-bottom: 0px;
+  } 
+ }
+ 
+.list{
+  padding-bottom: 0;
+}
+
+.button_menu{
+ 
+  @media screen and (min-width: $mobile){
+        justify-content: center;
+      }
+      @media screen and (min-width: $tablet){
+        // margin-left: auto;
+      }    
+}
+
+.button_wrap{
+  display: flex;
+  @media screen and (min-width: 320px){
+    margin-top: 16px;
+    justify-content: center;
+  }
+  @media screen and (min-width: $mobile){
+    margin-top: 32px;
+    justify-content: center;
+  }
+  @media screen and (min-width: $tablet){
+    margin-top: 40px;
+    justify-content: flex-end;
+    }
+  @media screen and (min-width: $desktop){
+  justify-content: flex-end;
+  margin-top: 31px;
+  }
+}

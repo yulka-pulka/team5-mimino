@@ -27,5 +27,25 @@ const swiper = new Swiper(".mini-slider-1", {
   },
       });
     
+const swiperSlider = new Swiper(".mini-slider-r", {
+  modules: [Navigation, Autoplay],
+        speed: 3500,
+        slidesPerView: 2,
+        spaceBetween: 20,
+        loop: true,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button__next",
+          prevEl: ".swiper-button__prev",
+  },
+  breakpoints: {
 
+    1024: {
+      spaceBetween: 40,
+    },
+  },
+      });
       
