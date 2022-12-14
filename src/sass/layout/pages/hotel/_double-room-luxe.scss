@@ -42,7 +42,6 @@
     }
 }
 .logo-page {
-
     font-family: 'Film P3', sans-serif;
     @media screen and (max-width: 413px){
      width: 30vw;
@@ -53,9 +52,9 @@
     text-transform: uppercase;
     margin-bottom: 32px;
     @include tablet {
+      margin-bottom: 62px;
       font-size: 64px;
       line-height: 1.08;
-      margin-bottom: 62px;
     }
     @include desktop {
         margin-bottom: 72px;
@@ -219,13 +218,7 @@
     text-decoration: none;
     border: none;
 }
-.btn-list {
-    text-align: center;
-  
-    @include tablet {
-      text-align: left;
-    }
-  }
+
   
   .btn-list__item:not(:last-child) {
     margin-bottom: 16px;
@@ -242,7 +235,7 @@
 
 
 .btn-list {
-    @media screen and (min-width: 320px){
+    @media screen and (max-width: 413px){
         align-items: center;
         justify-content: center;
         padding-top: 62px; 
@@ -263,10 +256,10 @@
     }
 }
 .wrapper{
-    @media screen and (min-width: 320px){
+    @media screen and (max-width: 413px){
         margin-top: 32px;
-        text-align: center;
-        align-items: center;
+
+   
     }
     @media screen and (min-width: 1024px){
         display: flex;
