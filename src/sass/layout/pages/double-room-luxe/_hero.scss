@@ -95,6 +95,9 @@
   text-decoration: none;
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: $mobile) {
+    font-size: 3vw;
+  }
 }
 
 .room-address-icon {
@@ -134,6 +137,10 @@
   line-height: calc(32 / 28);
   letter-spacing: 0.05em;
   color: getColor('white-text');
+  @media screen and (max-width: $mobile) {
+    font-size: 7vw;
+  }
+
   @media screen and (min-width: 1024px) {
     margin-bottom: 24px;
     font-size: 36px;
@@ -153,6 +160,10 @@
   line-height: calc(15 / 12);
   letter-spacing: 0.02em;
   color: getColor('white-text');
+  @media screen and (max-width: $mobile) {
+    font-size: 3vw;
+  }
+
   @media screen and (min-width: 1024px) {
     width: 400px;
     margin-bottom: 42px;
@@ -186,6 +197,10 @@
   position: absolute;
   bottom: 25px;
   right: 0;
+  @media screen and (max-width: $mobile) {
+    font-size: 4vw;
+  }
+
   @media screen and (min-width: 1024px) {
     bottom: 26px;
   }
