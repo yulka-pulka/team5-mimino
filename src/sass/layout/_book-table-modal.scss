@@ -1,0 +1,200 @@
+.modal-table{
+    width: 100%;
+    height: 668px;
+    border-radius: 2px;
+    padding: 60px 15px;
+      @include mobile {
+        width: 414px;
+      }
+      @include tablet {
+        width: 712px;
+        height: 522px;
+        padding: 60px;
+      }
+}
+.modal-table-close {
+    position: absolute;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    right: 16px;
+    top: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.modal-table-close-icon{
+  stroke: map-get($colors, 'primary-title');
+}
+.modal-table-title{
+  font-family: 'Times New Roman';
+  font-style: normal;
+  text-align: center;
+  font-weight: 700;
+  font-size: 5vw;
+  line-height: 1.16;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: map-get($colors, 'primary-title');
+  margin-bottom: 40px;
+  @include mobile {
+    font-size: 24px;
+  }
+  @include tablet {
+    font-size: 40px;
+    line-height: 1.15;
+  }
+}
+.modal-form-wrap{
+  @include tablet {    
+    display: flex;
+    gap: 16px; 
+  }
+}
+.table-label-wrap{
+  position: relative;
+}
+
+.table-label::after{
+  content: '';
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-image: url(../images/arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 24px;
+  height: 24px;
+}
+.modal-table-input {
+    width: 100%;
+    height: 54px;
+    border: 1px solid map-get($colors, 'second-accent');
+    color: map-get($colors, 'placeholder');
+    padding-left: 12px; 
+    margin-bottom: 8px;
+    background-color: transparent;
+    outline: transparent;
+    &::placeholder {
+      font-family: 'Times New Roman';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 5vw;
+      line-height: 1.15;
+      letter-spacing: 0.05em;
+      color: map-get($colors, 'placeholder');
+        @include mobile{
+          font-size:20px;
+        }
+        @include tablet{
+          font-size:24px;
+        }
+}
+    &:hover,
+    &:focus {
+        border-color: map-get($colors, 'accent-color');
+    }
+    
+    @include tablet {
+      width: 288px;
+      height: 64px;
+    }
+}
+.modal-table-text{
+display: block;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: map-get($colors, 'second-accent');
+  padding-left: 12px;
+  margin-bottom: 20px;
+    @include tablet {
+    margin-bottom: 28px;
+    font-size: 16px;
+  }
+}
+.modal-text-data{
+  margin-bottom: 0;
+}
+.modal-text-tel{
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 0;
+  } 
+}
+
+.table-select{
+  width: 100%;
+  height: 54px;
+  padding: 0 12px;
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5vw;
+  line-height: 1.15;
+  letter-spacing: 0.05em;
+  color: map-get($colors, 'placeholder');
+  background-color: transparent;
+  border: 1px solid map-get($colors, 'second-accent');
+  margin-bottom: 8px;
+  position: relative;
+  outline: transparent;
+  appearance: none;
+  z-index: 2;
+  @include mobile {
+    font-size: 20px;
+  }
+  @include tablet {
+    width: 288px;
+    height: 64px;
+    font-size: 24px;
+  }
+   &:hover,
+    &:focus {
+        border-color: map-get($colors, 'accent-color');
+  }
+}
+
+.btn-modal-table {
+    min-width: 100%;
+    height: 64px;
+    background-color: map-get($colors, 'primary-title');
+    border: 1px solid map-get($colors, 'accent-color');
+    border-radius: 2px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5vw;
+    line-height: 1.2;
+    color: map-get($colors, 'white-text');
+    margin-top: 40px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition-property: color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: map-get($colors, 'primary-title');
+      background-color: map-get($colors, 'accent-color'); 
+    }
+    @include mobile {
+      font-size: 20px;
+      min-width: 384px;
+    }
+    @include tablet {
+      width: 592px;
+      font-size: 24px; 
+      }
+  }
+  .modal-table.is-show {
+    display: block;
+  }
+  .modal.active,
+  .overlay.active {
+    opacity: 1;
+    visibility: visible;
+  }
