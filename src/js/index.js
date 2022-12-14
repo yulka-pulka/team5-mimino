@@ -50,8 +50,11 @@ const swiperSlider = new Swiper(".mini-slider-r", {
       });
 // ---- smooth scroll
 
-function scrollElement(){
- const element = document.getElementById("#price-menu");
- element.scrollIntoView({ behavior: 'smooth', block: 'start'});
+const btn = document.getElementById('scroll-btn');
+const el = document.getElementById('price-menu');
+
+if (btn !== null) {
+  btn.addEventListener('click', function () {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
 }
-// onclick= "scrollElement()"
