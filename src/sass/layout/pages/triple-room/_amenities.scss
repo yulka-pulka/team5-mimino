@@ -1,0 +1,143 @@
+.amenities-room {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  @include tablet {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+}
+
+.amenities-title {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 7vw;
+  line-height: 1.15;
+  color: map-get($colors, 'primary-title');
+  margin-bottom: 16px;
+  @include mobile {
+    font-size: 32px;
+  }
+}
+.amenities-text {
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: map-get($colors, 'primary-text');
+  @include font(16px, 20px, 700, 0.02em);
+  @media screen and (max-width: 413px) {
+    font-size: 3vw;
+  }
+}
+.amenities-text-bottom {
+  margin-bottom: 32px;
+  @include tablet {
+    max-width: 757px;
+  }
+}
+
+.amenities-item {
+  margin-bottom: 32px;
+}
+.amenities-item-bottom {
+  @include tablet {
+    margin-bottom: 40px;
+  }
+}
+.amenities-secondary-title {
+  font-family: 'Times New Roman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 5vw;
+  line-height: 1.16;
+  text-transform: uppercase;
+  color: map-get($colors, 'primary-title');
+  margin-bottom: 16px;
+  @include mobile {
+    font-size: 24px;
+  }
+}
+.amenities-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  @include tablet {
+    flex-direction: row;
+    gap: 80px;
+  }
+}
+.amenities-text-tablet {
+  @include tablet {
+    max-width: 400px;
+  }
+}
+.amenities-describe {
+  @include tablet {
+    max-width: 450px;
+  }
+}
+.amenities-second-text {
+  @include tablet {
+    margin-left: -46px;
+  }
+}
+.amenities-button {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4vw;
+  line-height: 1.2;
+  height: 64px;
+  text-transform: uppercase;
+  color: map-get($colors, 'white-text');
+  background: #000000;
+  border: 1px solid map-get($colors, 'accent-color');
+  border-radius: 25px;
+  margin-bottom: 20px;
+  display: block;
+  &:hover {
+    background: map-get($colors, 'accent-color');
+    color: map-get($colors, 'primary-title');
+  }
+  @include mobile {
+    font-size: 20px;
+  }
+  @media screen and (max-width: 1023px) {
+    width: 100%;
+  }
+  @include tablet {
+    margin-left: auto;
+    min-width: 434px;
+  }
+  @include desktop {
+    margin-right: 198px;
+  }
+}
+.amenities-link {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  color: map-get($colors, 'second-accent');
+  @include font(16px, 24px, 500, 0.02em);
+  @media screen and (max-width: 413px) {
+    font-size: 3vw;
+  }
+  @media screen and (max-width: 1023px) {
+    padding-left: 16px;
+  }
+  @include tablet {
+    justify-content: end;
+    font-size: 20px;
+  }
+  @include desktop {
+    margin-right: 198px;
+  }
+}
+.amenities-icon {
+  fill: map-get($colors, 'second-accent');
+  width: 24px;
+  height: 24px;
+}
