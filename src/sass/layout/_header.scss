@@ -3,11 +3,11 @@
   width: 100%;
   padding-top: 16px;
   padding-bottom: 9px;
-  z-index: 2;
+  z-index: 99;
 
   @include tablet {
-    padding-top: 24px;
-    padding-bottom: 33px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     height: 100px;
   }
 }
@@ -16,13 +16,17 @@
   display: flex;
   align-items: center;
 
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 413px) {
     width: 100%;
     justify-content: center;
   }
 }
 
 .header-navigation {
+  display: flex;
+}
+
+.link-wrap {
   display: flex;
   align-items: center;
 }
@@ -44,7 +48,7 @@
     margin-right: 96px;
   }
 
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 413px) {
     @include font(9vw, 10vw, 700, 0.3em);
     margin-right: 7%;
   }
@@ -56,9 +60,13 @@
   gap: 26px;
 
   @include tablet {
+    gap: 57px;
+  }
+  @include desktop {
     gap: 72px;
   }
-  @media screen and (max-width: 414px) {
+
+  @media screen and (max-width: 413px) {
     gap: 8px;
   }
 }
@@ -75,13 +83,15 @@
   display: flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  align-items: center;
 
   @include tablet {
     @include font(20px, 24px, 500, 0.02em);
     margin-right: 32px;
   }
 
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 413px) {
     font-size: 4.3vw;
   }
   &:hover,
@@ -95,7 +105,7 @@
   @include tablet {
     display: none;
   }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 413px) {
     width: 18px;
     height: 18px;
   }
@@ -103,13 +113,14 @@
 
 .phone-icon {
   fill: getColor('accent-color');
+  margin-right: 8px;
 }
 
 .phone-wrap {
   display: none;
   @include tablet {
     display: flex;
-    padding: 11px 8px;
+    padding: 11px 8px 12px;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
   }
@@ -123,8 +134,8 @@
     @include font(14px, 17px, 400, 0.02em);
     display: flex;
     align-items: center;
-    color: #ffffff;
-    padding: 11px 8px;
+    color: getColor('white-text');
+    padding: 11px 8px 12px;
     border: 1px solid rgba(243, 198, 83, 0.7);
     border-radius: 2px;
   }
