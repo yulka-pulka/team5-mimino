@@ -1,6 +1,11 @@
 
 table {
-
+  @media screen and (min-width: 320px){
+  min-width: 290px;
+    }
+    @media screen and (max-width: 413px){
+      max-width: 383px;
+        }
   @media screen and (min-width: $tablet){
 width: 421px;
   }
@@ -22,17 +27,21 @@ width: 421px;
   .menu{
     max-width: 1280px;
     margin: 0 auto;
-    background-color:map-get($colors, 'secondary-bg');
+   
     @media screen and (min-width: 320px){
       padding-top: 16px;padding-bottom: 16px;
+      background-color: #FFFDEE;
      }
     @media screen and (min-width: $mobile){
      padding-top: 32px;padding-bottom: 32px;
+     background-color: #FFFDEE;
     }
     @media screen and (min-width: $tablet){
-      padding-top: 58px;padding-bottom: 40px;}
+      padding-top: 58px;padding-bottom: 40px;
+      background-color:map-get($colors, 'secondary-bg')}
     @media screen and (min-width: $desktop){
-   padding-top: 58px;padding-bottom: 60px;}
+   padding-top: 58px;padding-bottom: 60px;
+   background-color:map-get($colors, 'secondary-bg');}
   }
   
   
@@ -102,10 +111,11 @@ width: 421px;
     @media screen and (min-width: $desktop){
       padding-bottom: 12px;
       width: 290px;}
+    
   }
- .prices_wrap{
-   display: block;
- }
+//  .prices_wrap{
+//    display: block;
+//  }
   .menu_title{
     @media screen and (min-width: 320px){
       font-family: 'Times New Roman';
@@ -190,7 +200,7 @@ margin-top: 10px;
     @media screen and (min-width: 320px){
       font-family: 'Montserrat';
     font-style: normal;
-    font-size: 3vw;
+    font-size: 3.4vw;
     font-weight: 500;
     }
     @media screen and (min-width: $mobile){
@@ -209,12 +219,14 @@ margin-top: 10px;
     @media screen and (min-width: 320px){
       font-family: 'Montserrat';
     font-style: normal;
-    font-size: 3vw;
+    font-size: 3.4vw;
     font-weight: 500;
     padding-bottom: 5px;
+
     }
     @media screen and (min-width: $mobile){
-      @include font(14px, 17px, 500, 0.02em) 
+      @include font(14px, 17px, 500, 0.02em);
+      padding-bottom: 0; 
     }
     @media screen and (min-width: $desktop){
     @include font(16px, 20px, 500, 0.02em);}
@@ -271,7 +283,7 @@ margin-top: 10px;
   }
   .dishes_price{
     @media screen and (min-width: 320px){
-      margin-left: 5px;
+      margin-left: 9px;
       font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
@@ -296,21 +308,21 @@ color:map-get($colors, 'primary-title')}
 .dishes_price-patatoes,
 .dishes_price-tiramisu{
   @media screen and (min-width: 320px){
-    margin-left: 8px;
+    margin-left: 12px;
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
 font-size: 3vw;}
   @media screen and (min-width: $mobile){
     @include font(14px, 17px, 700, 0.02em); 
-    margin-left: 35px;
+    margin-left: 32px;
   }
   @media screen and (min-width: $tablet){
     margin-left: 50px;
   }
   @media screen and (min-width: $desktop){
    
-    margin-left: 65px;
+    margin-left: 63px;
     @include font(16px, 20px, 700, 0.02em);}
   @include font(16px, 20px, 700, 0.02em);
   font-family: 'Montserrat';
@@ -326,11 +338,8 @@ font-style: normal;
 font-weight: 700;
 font-size: 3vw;}
   @media screen and (min-width: $mobile){
-    margin-left: 10px;
-  }
-  @media screen and (min-width: $mobile){
     @include font(14px, 17px, 700, 0.02em); 
-    margin-left: 25px;
+    margin-left: 20px;
   }
   @media screen and (min-width: $tablet){
     margin-left: 35px;
@@ -344,18 +353,15 @@ font-style: normal;
 }
 .drinks_price-espresso{
   @media screen and (min-width: 320px){
-    margin-left: 8px;
+    margin-left: 10px;
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
 font-size: 3vw;
   }
   @media screen and (min-width: $mobile){
-    margin-left: 10px;
-  }
-  @media screen and (min-width: $mobile){
     @include font(14px, 17px, 700, 0.02em); 
-    margin-left: 35px;
+    margin-left: 29px;
   }
   @media screen and (min-width: $tablet){
    
@@ -370,19 +376,15 @@ font-style: normal;
 }
 .drinks_price-americano{
   @media screen and (min-width: 320px){
-    margin-left: 5px;
+    margin-left: 6px;
     font-family: 'Montserrat';
 font-style: normal;
 font-weight: 700;
 font-size: 3vw;
   }
   @media screen and (min-width: $mobile){
-    margin-left: 10px;
-    
-  }
-  @media screen and (min-width: $mobile){
     @include font(14px, 17px, 700, 0.02em); 
-    margin-left: 28px;
+    margin-left: 24px;
   }
   @media screen and (min-width: $tablet){
    
@@ -435,4 +437,10 @@ font-style: normal;
   justify-content: flex-end;
   margin-top: 31px;
   }
+}
+.dessert_table{
+  width: 100%;
+}
+.drinks_table{
+  width: 100%;
 }
