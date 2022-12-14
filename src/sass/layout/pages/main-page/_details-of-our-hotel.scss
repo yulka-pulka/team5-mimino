@@ -57,10 +57,10 @@
             padding-bottom: 47px;
         }
 
-        @media screen and (min-width: 1280px) {
-            padding-right: 86px;
-            padding-left: 47px;
-        }
+        // @media screen and (min-width: 1280px) {
+        //     padding-right: 86px;
+        //     padding-left: 47px;
+        // }
   }
   
   .hotel__article {
@@ -118,7 +118,7 @@
 
     text-align: center;
     @media screen and (max-width: 1023px) {
-        margin-right: -20px;
+        // margin-right: -20px;
     }
 
     @media screen and (min-width: 1024px) {
@@ -147,14 +147,14 @@
 
     @media screen and (max-width: 413px){
         font-size: 5vw;
-        padding-left: 44vw;
+        margin-left: 41vw;
         margin-bottom: 5vw;
     }
 
     @media screen and (min-width: 414px) and (max-width: 1023px) {
 
         margin-bottom: 20px;
-        margin-left: 186px;
+        margin-left: 177px;
 
 
     }
