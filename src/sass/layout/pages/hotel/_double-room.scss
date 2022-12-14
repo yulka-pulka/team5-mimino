@@ -1,27 +1,23 @@
 .double{
-    max-width: 1280px;
+    position: relative;
     margin: 0 auto;
-}
-
-    .double__wrapper {
-        position: relative;
-        margin: 0 auto;
-        max-width: $mobile;
-        padding-top: 32px;
-        padding-bottom: 32px;
-      
-        @include tablet {
-          max-width: $tablet;
-          padding-top: 66px;
-          padding-bottom: 159px;
-        }
-      
-        @include desktop {
-          max-width: $desktop;
-          padding-top: 72px;
-          padding-bottom: 182px;
-        }
-      }
+    max-width: $mobile;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    @include tablet {
+      max-width: $tablet;
+      padding-top: 66px;
+      padding-bottom: 159px;
+    }
+  
+    @include desktop {
+      max-width: $desktop;
+      padding-top: 72px;
+      padding-bottom: 182px;
+    }
+  }
+  
       .hotel__item-titel{
         color: #B4B4B4;
         font-family: 'Times New Roman';
