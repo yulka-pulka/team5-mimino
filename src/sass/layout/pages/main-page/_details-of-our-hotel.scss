@@ -47,21 +47,44 @@
       }
     }
   }
-  
-  .hotel__article {
-    // display: flex;
 
-    .button-box.hotel-box {
+  .hotel__container {
+        padding-top: 24px;
         padding-bottom: 40px;
 
+        @media screen and (min-width: 1024px) {
+            padding-top: 48px;
+            padding-bottom: 47px;
+        }
+
+
+        // @media screen and (min-width: 1280px) {
+        //     padding-right: 86px;
+        //     padding-left: 47px;
+        // }
+
+
+  }
+  
+  .hotel__article {
+    display: flex;
+    flex-direction: column;
+
+    .button-box.hotel-box {
         text-align: center;
 
         @media screen and (min-width: 1024px) {
-            margin-right: 0;
-            padding-top: 408px;
-            padding-bottom: 100px;
-            text-align: end;
-            width: 238px;
+            margin-left: 694px;
+            margin-top: 154px;
+            margin-bottom: 53px;
+            width: 238px; 
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-left: 873px;
+            margin-top: 159px;
+            margin-bottom: 58px;
+
         }
     }
   }
@@ -70,34 +93,13 @@
     margin-bottom: 16px;
 }
 
-  .about__hotel_logotxt {
-    padding-top: 24px;
+  .details__hotel_logotxt {
     margin-bottom: 12px;
 
     text-align: center;
   }
 
-//   .about__hotel_header {
-//     font-family: Montserrat;
-//     text-align: center;
-
-//     margin-bottom: 8px;
-
-//     @include font (20px, 24px, 700, 0.02em); 
-//     color: map-get($colors, 'white-text');
-//   }
-
-  .hotel__article {
-    @media screen and (min-width: 1024px) {
-        display: flex;
-        justify-content: end;
-        
-    }
-  }
-
   .hotel__wrapper {
-    display: flex;
-    flex-direction: column;
 
     @media screen and (max-width: 1023px) {
         width: 243px;
@@ -109,10 +111,8 @@
         width: 620px;
     }
   }
-
-  .about__hotel_logotxt {
-
-    padding-top: 24px;
+  
+  .details__hotel_logotxt {
     margin-bottom: 12px;
 
     @media screen and (max-width: 413px){
@@ -121,33 +121,31 @@
 
     text-align: center;
     @media screen and (max-width: 1023px) {
-        text-align: end;
-        margin-right: -20px;
+
+        // margin-right: -20px;
+
 
     }
 
     @media screen and (min-width: 1024px) {
-        text-align: end;
+        text-align: start;
 
-        padding-top: 48px;
         margin-right: -20px;
         margin-bottom: 16px;
-
+        margin-left: 497px;
     }
 
     @media screen and (min-width: 1280px) {
-    @include font (64px, 69px, 700, 0.3em); 
-
-        text-align: end;
+        @include font (64px, 69px, 700, 0.3em); 
+        margin-left: 655px;
         margin-right: -20px;
         margin-bottom: 16px;
-
     }
   }
 
-  .about__hotel_header {
+  .details__hotel_header {
     font-family: Montserrat;
-    text-align: center;
+
 
 
     @include font (20px, 24px, 700, 0.02em); 
@@ -155,31 +153,45 @@
 
     @media screen and (max-width: 413px){
         font-size: 5vw;
+
+        margin-left: 41vw;
+
+        margin-left: 44vw;
+
+        margin-bottom: 5vw;
     }
 
-    @media screen and (max-width: 1023px) {
-        text-align: end;
-        margin-right: -7px;
+    @media screen and (min-width: 414px) and (max-width: 1023px) {
+
         margin-bottom: 20px;
+        margin-left: 177px;
+
+
+
 
     }
 
     @media screen and (min-width: 1024px) {
-        text-align: end;
+
+        @include font (24px, 29px, 700, 0.02em); 
+
+        text-align: start;
         margin-right: 0px;
         margin-bottom: 8px;
+
+        margin-left: 612px;
 
     }
 
     @media screen and (min-width: 1280px) {
         @include font (24px, 29px, 700, 0.02em); 
         margin-bottom: 8px;
-        text-align: end;
+        margin-left: 770px;
     }
   }
 
-  .about__hotel_subtxt {
-    margin-left: 12px;
+  .details__hotel_subtxt {
+    margin-left: 17px;
 
     @include font (12px, 15px, 600, 0.02em); 
     color: map-get($colors, 'secondary-text');
@@ -187,22 +199,28 @@
 
     @media screen and (max-width: 413px){
         font-size: 3vw;
+        width: 58vw;
+        margin-bottom: 11vw;
+
     }
 
-    @media screen and (max-width: 1023px) {
-        width: 243px;
+    @media screen and (min-width: 414px) and (max-width: 1023px) {
+        width: 243;
         margin-bottom: 48px;
     }
 
     @media screen and (min-width: 1024px) {
         @include font (16px, 20px, 600, 0.02em); 
-        margin-left: 77px;
-        width: 549px;    
+        margin-left: 150px;
+        width: 549px;   
+        margin-bottom: 40px;
+
     }
-
+    
+    @media screen and (min-width: 1280px) {
+        margin-left: 312px;
+    }
   }
-
-
 
 .hotel__link {
     text-align: center;
