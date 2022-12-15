@@ -1,3 +1,4 @@
+
 <section class="double-room">
   <div class="hotel-about container">
     <div class="text-wraper">
@@ -7,11 +8,20 @@
         двомісний номер <span class="hotel-about__title--s">люкс</span>
       </h2>
       <p class="hotel-about__description">
+<section class="double-luxe">
+  <div class="container">
+    <div class="hotel-about">
+      <h3 class="hotel__item-titel">Amet minim mollit non</h3>
+      <p class="logo-page logo-room">MIMIHO</p>
+      <h2 class="hotel__room item">ДВОМІСНИЙ НОМЕР люкс</h2>
+      <p class="hotel__about item">
+
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
     </div>
+
     <div class="hotel-about__img">
       <picture>
         <source
@@ -175,5 +185,60 @@
         </button>
       </div>
     </div>
+
+    <picture>
+      <source
+        media="(min-width: 1280px)"
+        srcset="
+          ./images/hotelpage/desktop/bedroom.jpg    1x,
+          ./images/hotelpage/desktop/bedroom-2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <source
+        media="(min-width: 1024px)"
+        srcset="
+          ./images/hotelpage/ipad/bedroom.jpg       1x,
+          ./images/hotelpage/desktop/bedroom-2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <source
+        media="(max-width: 1023px)"
+        srcset="
+          ./images/hotelpage/iphone/double-bedroom.jpg    1x,
+          ./images/hotelpage/iphone/double-bedroom-2x.jpg 2x
+        "
+        type="image/jpg"
+      />
+      <img
+        class="images"
+        src="./images/hotelpage/desktop/bedroom.jpg"
+        alt="кімната"
+        width="460"
+      />
+    </picture>
+    <div class="wrapper">
+      <div class="slider"></div>
+      <ul class="btn-list list curetn">
+        <li class="btn-list-item">
+          <a
+            class="btn btn--color-black link action"
+            href="./double-room-luxe.html"
+            >Детальніше</a
+          >
+        </li>
+        <li class="btn-list__item">
+          <button
+            class="btn btn--color-black js-open-modal"
+            data-modal="3"
+            type="button"
+          >
+            Переглянути ціни
+          </button>
+        </li>
+      </ul>
+    </div>
+
   </div>
 </section>

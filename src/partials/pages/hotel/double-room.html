@@ -1,3 +1,4 @@
+
 <section class="double-room">
   <div class="hotel-about container">
     <div class="text-wraper">
@@ -5,11 +6,21 @@
       <p class="hotel-about__logo">MIMIHO</p>
       <h2 class="hotel-about__title">ДВОМІСНИЙ НОМЕР</h2>
       <p class="hotel-about__description">
+
+<section class="double">
+  <div class="container">
+    <div class="hotel-about">
+      <h3 class="hotel__item-titel">Amet minim mollit non</h3>
+      <p class="logo-page logo-room">MIMIHO</p>
+      <h2 class="hotel__room item">ДВОМІСНИЙ НОМЕР</h2>
+      <p class="hotel__about item">
+
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
     </div>
+
     <div class="hotel-about__img">
       <picture>
         <source
@@ -173,5 +184,58 @@
         </button>
       </div>
     </div>
+
+    <picture>
+      <source
+        srcset="
+          ./images/double-room/min-bedroom-mob.jpg    1x,
+          ./images/double-room/min-bedroom-mob-2x.jpg 2x
+        "
+        type="image/jpeg"
+        media="(max-width: 1023px)"
+      />
+      <source
+        srcset="
+          ./images/double-room/min-bedroom-tab.jpg    1x,
+          ./images/double-room/min-bedroom-tab-2x.jpg 2x
+        "
+        type="image/jpeg"
+        media="(min-width: 1024px)"
+      />
+      <source
+        srcset="
+          ./images/double-room/min-bedroom-des.jpg    1x,
+          ./images/double-room/min-bedroom-des-2x.jpg 2x
+        "
+        type="image/jpeg"
+        media="(min-width: 1280px)"
+      />
+      <img
+        class="images"
+        src="./images/double-room/min-bedroom-mob.jpg"
+        alt="Фото двомісного номера"
+        width="460"
+      />
+    </picture>
+    <div class="wrapper">
+      <div class="slider"></div>
+      <ul class="btn-list list curetn">
+        <li class="btn-list-item">
+          <a class="btn btn--color-black link action" href="./double-room.html"
+            >Детальніше</a
+          >
+        </li>
+        <li class="btn-list__item">
+          <button
+            class="btn btn--color-black js-open-modal"
+            data-modal="3"
+            type="button"
+          >
+            Переглянути ціни
+          </button>
+        </li>
+      </ul>
+    </div>
+
   </div>
 </section>
