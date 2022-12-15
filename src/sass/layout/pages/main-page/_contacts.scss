@@ -104,13 +104,19 @@
 }
 
 .contacts__link-wrap {
+  @media screen and (max-width: 413px) {
+    gap: 8px;
+  }
   @include flex-center();
-  gap: 8px;
+  gap: 12px;
   padding: 9px 8px 7px 10px;
 
   background-color: getColor('white-text');
   border: 0.5px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
+  @include desktop {
+    gap: 16px;
+  }
 }
 
 .contacts__link {
