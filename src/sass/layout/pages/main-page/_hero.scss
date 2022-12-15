@@ -223,3 +223,28 @@
     }
   }
 }
+/*-------------Animation-------*/
+
+.animate__heartBeat {
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.btn-animate {
+  animation-delay: 5s;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+@keyframes heartBeat {
+  0% {
+    transform: scale(1);
+  }
+  14% {
+    transform: scale(1.1);
+  }
+  42% {
+    transform: scale(1.1);
+  }
+  70% {
+    transform: scale(1);
+  }
+}
