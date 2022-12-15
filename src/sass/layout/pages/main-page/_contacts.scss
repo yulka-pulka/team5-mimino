@@ -104,13 +104,19 @@
 }
 
 .contacts__link-wrap {
+  @media screen and (max-width: 413px) {
+    gap: 8px;
+  }
   @include flex-center();
-  gap: 8px;
+  gap: 12px;
   padding: 9px 8px 7px 10px;
 
   background-color: getColor('white-text');
   border: 0.5px solid rgba(243, 198, 83, 0.7);
   border-radius: 2px;
+  @include desktop {
+    gap: 16px;
+  }
 }
 
 .contacts__link {
@@ -121,11 +127,16 @@
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include font(14, 17, 400, 0.02em);
   color: #494848;
 
   @include desktop {
     gap: 10px;
+  }
+  &:hover,
+  &:focus {
+    color: getColor('accent-color');
   }
 }
 
@@ -150,9 +161,13 @@
   font-family: 'Montserrat', sans-serif;
   @include font(16, 20, 400, 0.01em);
   color: #494848;
-
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @include tablet {
     margin-right: 6.58px;
+  }
+  &:hover,
+  &:focus {
+    color: getColor('accent-color');
   }
 }
 
