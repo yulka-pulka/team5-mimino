@@ -139,6 +139,12 @@
   @include desktop {
     margin-right: 113px;
   }
+  &:hover {
+    color: map-get($colors, 'accent-color');
+  }
+  &:hover .amenities-icon {
+    fill: map-get($colors, 'accent-color');
+  }
 }
 .amenities-icon {
   fill: map-get($colors, 'second-accent');
