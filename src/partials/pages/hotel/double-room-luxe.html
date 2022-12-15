@@ -1,55 +1,179 @@
-<section class="double-luxe">
-    <div class="container">
-      <div class="hotel-about">
-      <h3 class="hotel__item-titel">Amet minim mollit non</h3>
-      <p class="logo-page logo-room">MIMIHO</p>
-      <h2 class="hotel__room item">ДВОМІСНИЙ НОМЕР люкс</h2>
-      <p class="hotel__about item">
+<section class="double-room">
+  <div class="hotel-about container">
+    <div class="text-wraper">
+      <h3 class="hotel-about__subtitle">Amet minim mollit non</h3>
+      <p class="hotel-about__logo">MIMIHO</p>
+      <h2 class="hotel-about__title">
+        двомісний номер <span class="hotel-about__title--s">люкс</span>
+      </h2>
+      <p class="hotel-about__description">
         Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
         sint. Velit officia consequat duis enim velit mollit. Exercitation
         veniam consequat sunt nostrud amet.
       </p>
     </div>
-    <picture>
-      <source
-            media="(min-width: 1280px)"
-             srcset="
-              ./images/hotelpage/desktop/bedroom.jpg 1x,
-              ./images/hotelpage/desktop/bedroom-2x.jpg 2x"
-               type="image/jpg"
-              />
-      <source
-            media="(min-width: 1024px)"
-              srcset="
-               ./images/hotelpage/ipad/bedroom.jpg 1x,
-               ./images/hotelpage/desktop/bedroom-2x.jpg 2x"
-              type="image/jpg"
-               />
-       <source
-          media="(max-width: 1023px)"
-            srcset="
-             ./images/hotelpage/iphone/double-bedroom.jpg 1x,
-             ./images/hotelpage/iphone/double-bedroom-2x.jpg 2x"
-              type="image/jpg"
-              />
-       <img class="images"
-          src="./images/hotelpage/desktop/bedroom.jpg" alt="кімната" width="460">
-       </picture>
-       <div class="wrapper">
-  <div class="slider">
-  
-  </div>
-        <ul class="btn-list list curetn">
-          <li class="btn-list-item">
-            <a class="btn btn--color-black link action" 
-            href="#">Детальніше</a>
-          </li>
-      <li class="btn-list__item">
-      <button class="btn btn--color-black js-open-modal"
-      data-modal="3" 
-      type="button">Переглянути ціни</button>
-    </li>
-    </ul>
-  </div>
+    <div class="hotel-about__img">
+      <picture>
+        <source
+          srcset="
+            ./images/homepage/about/hotel/room-des.jpg    1x,
+            ./images/homepage/about/hotel/room-des-2x.jpg 2x
+          "
+          media="(min-width:1280px)"
+          sizes="1280"
+        />
+        <source
+          srcset="
+            ./images/homepage/about/hotel/room-ipad.jpg    1x,
+            ./images/homepage/about/hotel/room-ipad-2x.jpg 2x
+          "
+          media="(min-width: 1024px)"
+          sizes="1024"
+        />
+        <img
+          srcset="./images/homepage/about/hotel/room-iphone-2x.jpg 2x"
+          src="./images/homepage/about/hotel/room-iphone.jpg"
+          alt="Двомісний номер"
+        />
+      </picture>
     </div>
-  </section>
+    <div class="content-wrap">
+      <div class="slider-box room">
+        <div class="swiper mini-slider-1">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/hotelpage/desktop/bathroom.jpg    1x,
+                    ./images/hotelpage/desktop/bathroom-2x.jpg 2x
+                  "
+                  media="(min-width:1280px)"
+                  sizes="254"
+                />
+                <source
+                  srcset="
+                    ./images/hotelpage/ipad/bathroom.jpg    1x,
+                    ./images/hotelpage/ipad/bathroom-2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                  sizes="194"
+                />
+                <img
+                  class="swiper__img"
+                  srcset="./images/hotelpage/iphone/triple-bathdroom-2x.jpg 2x"
+                  src="./images/hotelpage/iphone/triple-bathdroom.jpg"
+                  alt="готельно-ресторанний комплекс Міміно"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/hotelpage/desktop/cup.jpg    1x,
+                    ./images/hotelpage/desktop/cup-2x.jpg 2x
+                  "
+                  media="(min-width:1280px)"
+                  sizes="254"
+                />
+                <source
+                  srcset="
+                    ./images/hotelpage/ipad/cup.jpg    1x,
+                    ./images/hotelpage/ipad/cup-2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                  sizes="194"
+                />
+                <img
+                  class="swiper__img"
+                  srcset="./images/hotelpage/iphone/double-cup-2x.jpg 2x"
+                  src="./images/hotelpage/iphone/double-cup.jpg"
+                  alt="готельно-ресторанний комплекс Міміно"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/slider/desktop/foto2-desk-1x.jpg 1x,
+                    ./images/slider/desktop/foto2-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1280px)"
+                  sizes="254"
+                />
+                <source
+                  srcset="
+                    ./images/slider/tablet/foto2-tab-1x.jpg 1x,
+                    ./images/slider/tablet/foto2-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                  sizes="194"
+                />
+                <img
+                  class="swiper__img"
+                  srcset="./images/slider/mobile/foto2-mob-2x.jpg 2x"
+                  src="./images/slider/mobile/foto2-mob-1x.jpg"
+                  alt="готельно-ресторанний комплекс Міміно"
+                />
+              </picture>
+            </div>
+            <div class="swiper-slide">
+              <picture>
+                <source
+                  srcset="
+                    ./images/slider/desktop/foto5-desk-1x.jpg 1x,
+                    ./images/slider/desktop/foto5-desk-2x.jpg 2x
+                  "
+                  media="(min-width:1280px)"
+                  sizes="254"
+                />
+                <source
+                  srcset="
+                    ./images/slider/tablet/foto5-tab-1x.jpg 1x,
+                    ./images/slider/tablet/foto5-tab-2x.jpg 2x
+                  "
+                  media="(min-width: 1024px)"
+                  sizes="194"
+                />
+                <img
+                  class="swiper__img"
+                  srcset="./images/slider/mobile/foto5-mob-2x.jpg 2x"
+                  src="./images/slider/mobile/foto5-mob-1x.jpg"
+                  alt="готельно-ресторанний комплекс Міміно"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="swiper-button__wraper">
+            <div class="swiper-button__prev">
+              <svg class="swiper-button__icon icon-left">
+                <use href="./images/sprite.svg#icon-cil_arrow-left"></use>
+              </svg>
+            </div>
+            <div class="swiper-button__next">
+              <svg class="swiper-button__icon icon-right">
+                <use href="./images/sprite.svg#icon-cil_arrow-right"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button-wraper">
+        <a class="btn btn--color-black link" href="./double-room-luxe.html"
+          >Детальніше</a
+        >
+        <button
+          class="btn btn--color-black js-open-modal"
+          data-modal="3"
+          type="button"
+        >
+          Переглянути ціни
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

@@ -35,12 +35,12 @@
   @include tablet {
     margin-left: auto;
   }
-  .swiper-button {
-    &__wraper {
-      margin-left: 195px;
-      @include tablet {
-        margin-left: 0;
-      }
+}
+.swiper-button {
+  &__wraper {
+    margin-left: 195px;
+    @include tablet {
+      margin-left: 0;
     }
   }
 }
@@ -58,17 +58,6 @@
     }
   }
 }
-// .mini-slider-1 {
-//   width: 530px;
-//   height: auto;
-
-//   @include tablet {
-//     width: 428px;
-//   }
-//   @include desktop {
-//     width: 530px;
-//   }
-// }
 .swiper-button {
   &__wraper {
     display: flex;
@@ -109,6 +98,42 @@
     margin-top: 0;
     @include tablet {
       order: 1;
+    }
+  }
+}
+// FOR PAGE ROOM STYLING
+.slider-box.room {
+  width: 279px;
+  margin-top: 0;
+  @media screen and (max-width: 413px) {
+    width: 70vw;
+  }
+  @include tablet {
+    width: 428px;
+  }
+  @include desktop {
+    width: 548px;
+  }
+  .swiper.mini-slider-1 {
+    margin-left: -129px;
+    @include tablet {
+      margin-left: auto;
+    }
+  }
+  .swiper.mini-slider-r {
+    margin-right: -129px;
+    @include tablet {
+      margin-left: auto;
+    }
+  }
+}
+.room {
+  .swiper-button {
+    &__wraper {
+      margin-left: 144px;
+      @include tablet {
+        margin-left: 0;
+      }
     }
   }
 }
