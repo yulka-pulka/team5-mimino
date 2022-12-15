@@ -101,6 +101,7 @@
     right: auto;
     bottom: 24px;
     left: 47px;
+    padding: 8px 16px 8px 10px;
   }
   @media screen and (min-width: 1280px) {
     display: none;
@@ -118,14 +119,26 @@
   line-height: 1.25;
   text-decoration: none;
   display: flex;
-  justify-content: space-between;
+  gap: 8px;
   @media screen and (max-width: $mobile) {
     font-size: 3vw;
+  }
+  @media screen and (min-width: 1024px) {
+    font-size: 16px;
+    line-height: calc(20 / 16);
+    gap: 10px;
+  }
+  @media screen and (min-width: 1280px) {
+    display: none;
   }
 }
 
 .room-address-icon {
   fill: getColor('accent-color');
+  @media screen and (min-width: 1024px) {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .room-hero-wrap {
@@ -196,7 +209,7 @@
   @media screen and (min-width: 1024px) {
     flex-direction: row;
     gap: 20px;
-    margin-left: 372px;
+    margin-left: 325px;
   }
   @media screen and (min-width: 1280px) {
     display: none;
