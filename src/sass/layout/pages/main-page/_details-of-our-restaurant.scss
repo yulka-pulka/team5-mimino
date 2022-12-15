@@ -1,0 +1,213 @@
+
+  .restaurant {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+      url(../images/homepage/details/rest/bg-iphone.jpg);
+  
+    @include retina2x {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/homepage/details/rest/bg-iphone-2x.jpg);
+    }
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    @media screen and (min-width: $mobile) and (max-width: $tablet) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/homepage/details/rest/bg-iphone.jpg);
+      @include retina2x {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/homepage/details/rest/bg-iphone-2x.jpg);
+      }
+    }
+    @media screen and (min-width: $tablet) and (max-width: $desktop) {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/homepage/details/rest/bg-ipad.jpg);
+      @include retina2x {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/homepage/details/rest/bg-ipad-2x.jpg);
+      }
+    }
+    @include desktop {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+        url(../images/homepage/details/rest/bg-des.jpg);
+        max-width: $desktop;
+        margin: 0 auto;
+      @include retina2x {
+        background-image: linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.65)
+          ),
+          url(../images/homepage/details/rest/bg-des-2x.jpg);
+      }
+    }
+  }
+
+  .restaurant__container {
+        padding-top: 24px;
+        padding-bottom: 40px;
+
+        @media screen and (min-width: 1024px) {
+            padding-top: 48px;
+            padding-bottom: 47px;
+        }
+  }
+  
+  .restaurant__article {
+    display: flex;
+    flex-direction: column-reverse;
+    
+
+    .button-box.restaurant-box {
+        text-align: center;
+
+        @media screen and (min-width: 1024px) {
+            margin-top: 158px;
+            margin-bottom: 49px;
+            width: 238px; 
+        }
+
+        @media screen and (min-width: 1280px) {
+            margin-top: 160 px;
+            margin-bottom: 47px;
+            width: 238px; 
+        }
+    }
+  }
+
+  .btn.restaurant__btn {
+    margin-bottom: 16px;
+}
+
+  .details__restaurant_logotxt {
+    margin-bottom: 12px;
+
+    text-align: center;
+  }
+
+  .restaurant__wrapper {
+
+    @media screen and (max-width: 1023px) {
+        width: 243px;
+
+    }
+
+    @media screen and (min-width: 1024px) {
+        width: 620px;
+    }
+  }
+  
+  .details__restaurant_logotxt {
+    margin-bottom: 12px;
+    order: 1;
+
+    @media screen and (max-width: 413px){
+        font-size: 10vw;
+    }
+
+    text-align: center;
+    @media screen and (min-width: 414px) and (max-width: 1023px) {
+    }
+
+    @media screen and (min-width: 1024px) {
+        text-align: start;
+
+        margin-right: -20px;
+        margin-bottom: 16px;
+        margin-left: 231px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        @include font (64px, 69px, 700, 0.3em); 
+        margin-left: 253px;
+        margin-right: -20px;
+        margin-bottom: 16px;
+    }
+  }
+
+  .details__restaurant_header {
+    font-family: Montserrat;
+
+
+
+    @include font (20px, 24px, 700, 0.02em); 
+    color: map-get($colors, 'white-text');
+
+    @media screen and (max-width: 413px){
+        font-size: 5vw;
+        margin-left: 29vw;
+        margin-bottom: 5vw;
+    }
+
+    @media screen and (min-width: 414px) and (max-width: 1023px) {
+
+        margin-bottom: 20px;
+        margin-left: 125px;
+    }
+
+    @media screen and (min-width: 1024px) {
+
+        @include font (24px, 29px, 700, 0.02em); 
+
+        text-align: start;
+        margin-right: 0px;
+        margin-bottom: 8px;
+        margin-left: 231px;
+
+
+    }
+
+    @media screen and (min-width: 1280px) {
+        @include font (24px, 29px, 700, 0.02em); 
+        margin-bottom: 8px;
+        margin-left: 253px;
+
+    }
+  }
+
+  .details__restaurant_subtxt {
+
+    @include font (12px, 15px, 600, 0.02em); 
+    color: map-get($colors, 'secondary-text');
+    font-family: Montserrat;
+
+    @media screen and (max-width: 413px){
+        font-size: 3vw;
+        margin-left: 29vw;
+        width: 62vw;
+        margin-bottom: 11vw;
+
+
+    }
+
+    @media screen and (min-width: 414px) and (max-width: 1023px) {
+        width: 259px;
+        margin-bottom: 48px;
+        margin-left: 125px;
+
+    }
+
+    @media screen and (min-width: 1024px) {
+        @include font (16px, 20px, 600, 0.02em); 
+        margin-left: 231px;
+        width: 549px;    
+        margin-bottom: 40px;
+    }
+    
+    @media screen and (min-width: 1280px) {
+       
+        margin-left: 253px;
+        margin-bottom: 40px;
+    }
+  }
+
+.restaurant__link {
+    text-align: center;
+    width: 236px;
+}
+  
