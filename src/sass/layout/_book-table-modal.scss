@@ -89,11 +89,12 @@
         }
         @include tablet{
           font-size:24px;
+          line-height: 1.16;
         }
 }
     &:hover,
     &:focus {
-        border: 3px solid #d2691e;
+        border: 2px solid #d2691e;
     }
     
     @include tablet {
@@ -151,15 +152,16 @@ display: block;
     width: 288px;
     height: 64px;
     font-size: 24px;
+    line-height: 1.16;
   }
    &:hover,
     &:focus {
-        border: 3px solid #d2691e;
+        border: 2px solid #d2691e;
   }
 }
 
 .btn-modal-table {
-    min-width: 100%;
+    width: 100%;
     height: 64px;
     background-color: map-get($colors, 'primary-title');
     border: 1px solid map-get($colors, 'accent-color');
