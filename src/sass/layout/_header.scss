@@ -1,193 +1,148 @@
-.header {
+// ------------- style for page room header
+.page-header.room-page {
+  background: linear-gradient(#000 0%, #0000008c 54.17%, #0000 100%);
+  @include desktop {
+    width: $desktop;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+//-------------Main-------------
+.page-header {
+  display: flex;
+  align-items: center;
   position: absolute;
+  height: 64px;
+  top: 0;
+  left: 0;
   width: 100%;
-  padding-top: 16px;
-  padding-bottom: 9px;
   z-index: 99;
-
+  & .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   @include tablet {
-    padding-top: 30px;
-    padding-bottom: 30px;
     height: 100px;
   }
 }
-
-.header-container {
+.navigation {
   display: flex;
-  align-items: center;
-
-  @media screen and (max-width: 413px) {
-    width: 100%;
-    justify-content: center;
-  }
-}
-
-.header-navigation {
-  display: flex;
-}
-
-.link-wrap {
-  display: flex;
-  align-items: center;
-}
-
-.header-logo {
-  display: inline-block;
-  font-family: 'Film P3';
-  font-style: normal;
-  @include font(36px, 39px, 700, 0.3em);
-  color: getColor('white-text');
-  margin-right: 52px;
-
-  @include tablet {
-    @include font(40px, 43px, 700, 0.3em);
-    margin-right: 87px;
-  }
-
-  @include desktop {
-    margin-right: 96px;
-  }
-
-  @media screen and (max-width: 413px) {
-    @include font(9vw, 10vw, 700, 0.3em);
-    margin-right: 7%;
-  }
-}
-
-.navigation-list {
-  display: flex;
-  align-items: center;
-  gap: 26px;
-
-  @include tablet {
-    gap: 57px;
-  }
-  @include desktop {
-    gap: 72px;
-  }
-
-  @media screen and (max-width: 413px) {
-    gap: 8px;
-  }
-}
-
-.navi-item {
-  display: flex;
-}
-
-.navi-item-link {
-  font-family: 'Montserrat';
-  font-style: normal;
-  @include font(16px, 20px, 500, 0.02em);
-  color: getColor('accent-color');
-  display: flex;
-  align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  display: flex;
-  align-items: center;
-
-  @include tablet {
-    @include font(20px, 24px, 500, 0.02em);
-    margin-right: 32px;
-  }
-
-  @media screen and (max-width: 413px) {
-    font-size: 4.3vw;
-  }
-  &:hover,
-  &:focus {
-    color: getColor('white-text');
-  }
-}
-
-.phone-icon-mobile {
-  fill: getColor('accent-color');
-  @include tablet {
-    display: none;
-  }
-  @media screen and (max-width: 413px) {
-    width: 18px;
-    height: 18px;
-  }
-}
-
-.phone-icon {
-  fill: getColor('accent-color');
-  margin-right: 8px;
-}
-
-.phone-wrap {
-  display: none;
-  @include tablet {
+  &__list {
     display: flex;
-    padding: 11px 8px 12px;
-    border: 1px solid rgba(243, 198, 83, 0.7);
-    border-radius: 2px;
   }
-}
+  &__item:nth-child(odd) {
+    margin-right: 6px;
 
-.phone-navigation-link {
-  display: none;
-  @include tablet {
-    font-family: 'Montserrat';
-    font-style: normal;
-    @include font(14px, 17px, 400, 0.02em);
+    & .navigation__link {
+      color: getColor('accent-color');
+      padding: 2px 0;
+      @include tablet {
+        padding: 8px;
+      }
+      @include desktop {
+        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+    @include tablet {
+      margin-right: 32px;
+    }
+    .navigation__link:hover,
+    .navigation__link:focus {
+      @include desktop {
+        color: getColor('white-text');
+      }
+    }
+  }
+  &__link {
     display: flex;
     align-items: center;
-    color: getColor('white-text');
-    padding: 11px 8px 12px;
-    border: 1px solid rgba(243, 198, 83, 0.7);
-    border-radius: 2px;
-  }
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: getColor('accent-color');
-  }
-}
+    font-family: 'Montserrat', sans-serif;
+    @include font(16px, 20px, 500, 0.02em);
+    line-height: 1.25;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    text-decoration: none;
 
-.phone-double-link {
-  font-family: 'Montserrat';
-  font-style: normal;
-  @include font(14px, 17px, 400, 0.02em);
-  display: flex;
-  align-items: center;
-  color: getColor('white-text');
-  margin-right: 16px;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:hover,
-  &:focus {
-    color: getColor('accent-color');
-  }
-}
+    @media screen and (max-width: 413px) {
+      font-size: 4vw;
+    }
 
-.additional {
-  margin-right: 0;
-}
-
-.contacts-social {
-  @include desktop {
-    margin-left: auto;
+    @include tablet {
+      font-size: 20px;
+      line-height: 1.2;
+    }
   }
-}
-.contacts-social-list {
-  display: none;
-  @include desktop {
+  &__item:nth-child(even) {
     display: flex;
-    gap: 22px;
+    align-items: center;
+    margin-right: 20px;
+    @include tablet {
+      margin-right: 72px;
+      border-radius: 2px;
+      outline: 1px solid rgba(getColor('accent-color'), 0.7);
+    }
+    & .navigation__link {
+      @include tablet {
+        padding: 8px;
+      }
+    }
+    &:last-child {
+      margin-right: 0;
+      @include desktop {
+        margin-right: 60px;
+      }
+    }
+    .navigation__link:hover,
+    .navigation__link:focus {
+      .navigation__number {
+        @include desktop {
+          color: getColor('accent-color');
+        }
+      }
+    }
+  }
+  &__icon {
+    color: getColor('accent-color');
+    @include tablet {
+      margin-right: 14px;
+    }
+  }
+  &__number {
+    @include font(14px, 17px, 400, 0.02em);
+    color: getColor('white-text');
+    display: none;
+    @media screen and (max-width: 413px) {
+      font-size: 3.4vw;
+    }
+    @include tablet {
+      font-size: 14px;
+      display: inline-flex;
+    }
+    @include desktop {
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  & .social-list {
+    display: none;
+    @include desktop {
+      display: flex;
+    }
   }
 }
 
-.contacts-social-link {
-  padding: 30px 0;
-}
+//  LOGO
 
-.web-icon {
-  fill: rgba(243, 198, 83, 0.7);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.web-icon:hover,
-.web-icon:focus {
-  fill: getColor('white-text');
+.logo {
+  font-family: 'Film P3', sans-serif;
+  @include font(36px, 39px, 700, 0.3em);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: getColor('white-text');
+  @media screen and (max-width: 413px) {
+    font-size: 9vw;
+  }
+  @include tablet {
+    @include font(40px, 43px, 700, 0.3em);
+  }
 }

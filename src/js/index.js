@@ -48,4 +48,13 @@ const swiperSlider = new Swiper(".mini-slider-r", {
     },
   },
       });
-      
+// ---- smooth scroll
+
+const btn = document.getElementById('scroll-btn');
+const el = document.getElementById('price-menu');
+
+if (btn !== null) {
+  btn.addEventListener('click', function () {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  });
+}

@@ -1,0 +1,248 @@
+.double-luxe{
+    position: relative;
+    margin: 0 auto;
+    max-width: $mobile;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    @include tablet {
+      max-width: $tablet;
+      padding-top: 66px;
+      padding-bottom: 159px;
+    }
+  
+    @include desktop {
+      max-width: $desktop;
+      padding-top: 72px;
+      padding-bottom: 182px;
+    }
+}
+.hotel__item-titel{
+    color: #B4B4B4;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.15;
+    @media screen and (max-width: 413px){
+        font-size: 5vw;
+        margin-bottom: 4px;
+    }
+    @media screen and (min-width: 414px){
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    @media screen and (min-width: 1024px){
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 4px;
+    }
+}
+.logo-room {
+    @media screen and (max-width: 413px){
+     width: 30vw;
+     height: 43px;
+    }
+    @media screen and (min-width: 414px){
+    margin-bottom: 32px;
+    color: #494848;
+    }
+    @include tablet {
+      margin-bottom: 62px;
+    }
+    @include desktop {
+        margin-bottom: 72px;
+      }
+
+  }
+  .hotel__room{
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #000000;
+    @media screen and (max-width: 413px){
+        font-size: 6vw;
+    }
+    @media screen and (min-width: 414px){
+        font-size: 24px;
+        letter-spacing: 0.05em;
+    }
+    @media screen and (min-width: 1024px){
+        font-size: 30px;
+        line-height: 1.1;
+    }
+    @media screen and (min-width: 1280px){
+        font-size: 36px;
+    }
+}
+.hotel__about{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.25;
+    margin-top: 10px;
+    color: #7A7A7A;
+    @media screen and (max-width: 413px){
+        font-size: 3vw;
+        width: 62vw;
+    }
+    @media screen and (min-width: 414px){
+        font-size: 12px;
+        letter-spacing: 0.02em;
+        width: 258px;
+        margin-top: 12px;
+    }
+    @media screen and (min-width: 1024px){
+        font-size: 16px;
+        width: 439px;
+        margin-top: 16px;
+    }
+    @media screen and (min-width: 1280px){
+        font-size: 16px;
+        width: 400px;
+        margin-top: 24px;
+    }
+}
+.images{
+    @media screen and (max-width: 413px){
+        width: 59vw;
+        margin-left: 32vw;
+    }
+    
+    @media screen and (min-width: 414px){
+        width: 244px;
+        height: 322px;
+        margin-left: 140px;
+    }
+    @media screen and (max-width: 1023px){
+        margin-top: 32px;
+    
+    }
+    @media screen and (min-width: 1024px){
+        display: block;
+        position: absolute;
+        content: "";
+        top: -32px;
+        right: 112px;
+        width: 400px;
+        height: 524px;
+    }
+    @media screen and (min-width: 1280px){
+        width: 460px;
+        height: 574px;
+        right: 180px;
+       
+    }
+
+    &-list{
+        @media screen and (max-width: 413px){
+            width: 404px;
+            display: flex;
+            gap: 16px;
+            margin-top: 32px; 
+        }
+        @media screen and (min-width: 414px){
+            width: 404px;
+            display: flex;
+            gap: 16px;
+        }
+        
+        @media screen and (max-width: 500px){
+            margin-left: -115px;
+        }
+        @media screen and (min-width: 1024px){
+            display: flex;
+            gap: 40px;
+            margin-top: 176px;
+        }
+        @media screen and (min-width: 1280px){
+            width: 548px;
+            margin-top: 188px;
+        }
+    }
+}
+
+.slider{
+    @media screen and (max-width: 413px){
+        width: 304px;
+        height: 194px;
+
+    }
+    @media screen and (min-width: 414px){
+        width: 404px;
+        height: 194px;
+    } 
+    @media screen and (min-width: 1280px){
+        width: 540px;
+        height: 254px;
+    } 
+}
+.svg-list{
+    @media screen and (min-width: 414px){
+        display: flex;
+        gap: 32px;
+        width: 98px;
+        justify-content: left;
+        margin-top: 20px;
+        cursor: pointer;
+    } 
+    @media screen and (min-width: 1024px){
+        margin-top: 40px;
+        width: 404px;
+        justify-content: right;
+    }
+    @media screen and (min-width: 1280px){
+        width: 548px;
+        margin-top: 32px;
+    } 
+
+}
+.svg-icon{
+    width: 32px;
+    height: 32px;
+    fill: #000000;
+
+   & :hover, 
+   & :focus{
+   fill: #F3C653;
+}
+}
+  .action {
+    margin-bottom: 16px;
+  }
+  
+.curetn{
+    padding: 14px 0;
+    @media screen and (max-width: 413px){
+        align-items: center;
+        justify-content: center;
+        padding-top: 62px; 
+    }
+    @media screen and (min-width: 414px){
+        align-items: center;
+        justify-content: center;
+        padding-top: 72px;
+    }
+    
+    @media screen and (min-width: 1024px){
+    width: 500px;
+    flex-direction: column;
+    flex: 0 0 50%;
+    align-self: center;
+    align-items: flex-end;
+    display: flex;
+    }
+}
+.wrapper{
+    @media screen and (min-width: 320px){
+        margin-top: 32px;
+    }
+    @media screen and (min-width: 1024px){
+        display: flex;
+        margin-top: 174px;
+        justify-content: flex-end;
+    }
+    @media screen and (min-width: 1280px){
+        margin-top: 188px;
+    }
+}

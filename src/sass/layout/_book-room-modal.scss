@@ -127,7 +127,7 @@
     @include font(20px, 23px, 700, 0.05em);
   }
   &:focus {
-    border: 1px solid map-get($colors, 'accent-color');
+    border: 3px solid #d2691e;
   }
   @media screen and (max-width: 413px) {
     font-size: 4vw;
@@ -170,7 +170,7 @@
   z-index: 2;
   outline: transparent;
   &:focus {
-    border: 1px solid map-get($colors, 'accent-color');
+    border: 3px solid #d2691e;
   }
   @include font(20px, 23px, 700, 0.05em);
 
