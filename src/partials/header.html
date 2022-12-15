@@ -1,4 +1,4 @@
-<header class="page-header">
+<header class="page-header" id="header">
   <div class="container">
     <a href="index.html" class="logo" aria-label="Міміно">Mimiho</a>
     <nav class="navigation">
@@ -70,3 +70,23 @@
     </nav>
   </div>
 </header>
+
+<script>
+  window.onscroll = function () {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    let scrollPos = 100;
+    let header = document.getElementById('header');
+
+    if (
+      document.body.scrollTop > scrollPos ||
+      document.documentElement.scrollTop > scrollPos
+    ) {
+      header.classList.add('active');
+    } else {
+      header.classList.remove('active');
+    }
+  }
+</script>
