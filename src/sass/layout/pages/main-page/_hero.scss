@@ -133,10 +133,11 @@
 
   .button-box {
     text-align: center;
-    margin-bottom: 0;
     @include tablet {
       display: flex;
+      flex-direction: row;
       padding-bottom: 49px;
+      margin-bottom: 0;
       order: 1;
     }
     @include desktop {
@@ -147,6 +148,8 @@
       &:not(:last-child) {
         margin-bottom: 24px;
         @include tablet {
+          margin-right: 40px;
+          margin-bottom: 0;
         }
       }
     }
