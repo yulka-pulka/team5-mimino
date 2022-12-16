@@ -139,6 +139,9 @@
 }
 .slider-wrap {
   width: 370px;
+  @media screen and (max-width: 413px) {
+    width: 80vw;
+  }
 
   @include tablet {
     width: auto;
@@ -178,5 +181,6 @@
   margin-left: -15px;
 }
 .m-right {
+  align-self: flex-end;
   margin-right: -15px;
 }
