@@ -1,88 +1,7 @@
 <section class="restaurant">
   <div class="container restaurant__container">
-    <div class="restaurant-details">
-      <p class="details__restaurant_logo logo-page">mimiho</p>
-      <h3 class="details__restaurant-subtitle">Ресторан</h3>
-      <p class="details__restaurant-text">
-        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-        sint. Velit officia consequat duis enim velit mollit.
-      </p>
-    </div>
-    <div class="details__restaurant-wrap">
-      <!--SLIDER FOR MAINPAGE DETAIL RESTAURANT -->
-      <div class="slider-wrap m-right">
-        <div class="swiper slider-3-r">
-          <!-- Additional required wrapper -->
-          <div class="swiper-wrapper">
-            <!-- Slides -->
-            <div class="swiper-slide">
-              <picture>
-                <img
-                  class="swiper__img"
-                  srcset="./images/homepage/details/rest/steak-des-2x.jpg 2x"
-                  src="./images/homepage/details/rest/steak-des.jpg"
-                  alt="готельно-ресторанний комплекс Міміно"
-                />
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <picture>
-                <source
-                  srcset="
-                    ./images/homepage/details/rest/kebab-ipad.jpg    1x,
-                    ./images/homepage/details/rest/kebab-ipad-2x.jpg 2x
-                  "
-                  media="(min-width: 1024px)"
-                />
-                <img
-                  class="swiper__img"
-                  srcset="./images/homepage/details/rest/kebab-iphone-2x.jpg 2x"
-                  src="./images/homepage/details/rest/kebab-iphone.jpg"
-                  alt="готельно-ресторанний комплекс Міміно"
-                />
-              </picture>
-            </div>
-            <div class="swiper-slide">
-              <picture>
-                <source
-                  srcset="
-                    ./images/homepage/details/rest/dish-des.jpg    1x,
-                    ./images/homepage/details/rest/dish-des-2x.jpg 2x
-                  "
-                  media="(min-width: 1280px)"
-                />
-                <source
-                  srcset="
-                    ./images/homepage/details/rest/dish-ipad.jpg    1x,
-                    ./images/homepage/details/rest/dish-ipad-2x.jpg 2x
-                  "
-                  media="(min-width: 1024px)"
-                />
-                <img
-                  class="swiper__img"
-                  srcset="./images/homepage/details/rest/dish-des-2x.jpg 2x"
-                  src="./images/homepage/details/rest/dish-des.jpg"
-                  alt="готельно-ресторанний комплекс Міміно"
-                />
-              </picture>
-            </div>
-          </div>
-          <div class="swiper-button__wraper">
-            <div class="swiper-button__prev">
-              <svg class="swiper-button__icon icon-left u-white">
-                <use href="./images/sprite.svg#icon-cil_arrow-left"></use>
-              </svg>
-            </div>
-            <div class="swiper-button__next">
-              <svg class="swiper-button__icon icon-right u-white">
-                <use href="./images/sprite.svg#icon-cil_arrow-right"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="button-box">
+    <article class="restaurant__article">
+      <div class="button-box restaurant-box">
         <button
           class="btn restaurant__btn js-open-modal"
           data-modal="2"
@@ -97,6 +16,16 @@
           >Переглянути меню</a
         >
       </div>
-    </div>
+      <p class="details__restaurant_logotxt logo-page logo-page--color-white">
+        mimiho
+      </p>
+      <div class="restaurant__wrapper">
+        <h4 class="details__restaurant_header">Ресторан</h4>
+        <p class="details__restaurant_subtxt">
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
+          sint. Velit officia consequat duis enim velit mollit.
+        </p>
+      </div>
+    </article>
   </div>
 </section>
